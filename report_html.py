@@ -12,6 +12,12 @@ def write_html_report(result, output_dir):
     complexity = result["analysis"]["complexity"]
     security = result["analysis"]["security"]
     smells = result["analysis"]["smells"]
+    duplicates = result["analysis"].get("duplicates", {})
+    unused_imports = result["analysis"].get("unusedImports", {})
+    problem_files = result["analysis"].get("problemFiles", [])
+    trend = result.get("trend")
+    roadmap = result.get("roadmap", [])
+    quality_ctx = result.get("qualityContext", {})
     score = result["qualityScore"]
     grade = result["grade"]
 
@@ -71,6 +77,69 @@ def write_html_report(result, output_dir):
     for smell in smells["issues"][:15]:
         smell_rows += f"<tr><td>{smell['type']}</td><td><code>{smell['file']}</code></td><td>{smell['line']}</td><td>{smell['details']}</td></tr>\n"
 
+    # Problem files rows
+    problem_rows = ""
+    for pf in problem_files:
+        b = pf["breakdown"]
+        problem_rows += f"<tr><td><code>{pf['file']}</code></td><td>{pf['totalIssues']}</td><td>{b['complexity']}</td><td>{b['security']}</td><td>{b['smells']}</td></tr>\n"
+
+    # Duplicate rows
+    dup_rows = ""
+    for i, group in enumerate(duplicates.get("groups", [])[:10], 1):
+        locs = "<br>".join(f"<code>{loc['file']}:{loc['startLine']}-{loc['endLine']}</code>" for loc in group["locations"][:3])
+        dup_rows += f"<tr><td>{i}</td><td>{group['lineCount']}</td><td>{locs}</td></tr>\n"
+
+    # Unused imports rows
+    unused_rows = ""
+    for entry in unused_imports.get("files", [])[:15]:
+        symbols = ", ".join(f"<code>{imp['symbol']}</code>" for imp in entry["imports"])
+        unused_rows += f"<tr><td><code>{entry['file']}</code></td><td>{symbols}</td></tr>\n"
+
+    # Trend section
+    trend_html = ""
+    if trend:
+        delta = trend["scoreDelta"]
+        delta_color = "#2d7a3a" if delta >= 0 else "#9a3a2d"
+        delta_sign = "+" if delta >= 0 else ""
+        trend_html = f"""
+    <div class="section">
+        <h2>Trend</h2>
+        <p style="font-size:24px;font-weight:700;color:{delta_color};margin-bottom:16px;">{delta_sign}{delta} points since last scan</p>
+        <table>
+            <thead><tr><th>Category</th><th>Previous</th><th>Current</th><th>Delta</th></tr></thead>
+            <tbody>"""
+        for cat, detail in trend["details"].items():
+            d = detail["delta"]
+            d_color = "#2d7a3a" if d <= 0 else "#9a3a2d"
+            d_sign = "+" if d >= 0 else ""
+            trend_html += f"<tr><td>{cat.title()}</td><td>{detail['previous']}</td><td>{detail['current']}</td><td style=\"color:{d_color};font-weight:600;\">{d_sign}{d}</td></tr>\n"
+        trend_html += """</tbody></table>
+    </div>"""
+
+    # Roadmap section
+    roadmap_html = ""
+    if roadmap:
+        roadmap_html = """
+    <div class="section">
+        <h2>Remediation Roadmap</h2>
+        <div style="display:grid;gap:12px;">"""
+        effort_colors = {"low": "#2d7a3a", "medium": "#7a6b2d", "high": "#9a3a2d"}
+        for item in roadmap:
+            ec = effort_colors.get(item["effort"], "#666")
+            gain = f"+{item['estimatedScoreGain']} pts" if item["estimatedScoreGain"] > 0 else "maintainability"
+            roadmap_html += f"""<div style="display:flex;align-items:center;gap:12px;padding:12px;background:#f8f8fa;border-radius:6px;">
+                <span style="font-size:20px;font-weight:700;color:#1a1a2e;width:28px;">{item['priority']}</span>
+                <div style="flex:1;"><div style="font-size:14px;font-weight:500;">{item['action']}</div><div style="font-size:12px;color:#666;margin-top:4px;">{item['rationale']}</div></div>
+                <span style="background:{ec};color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:600;">{item['effort']}</span>
+                <span style="font-size:13px;font-weight:600;color:#1a1a2e;">{gain}</span>
+            </div>"""
+        roadmap_html += "</div></div>"
+
+    # Quality context note
+    ctx_note = ""
+    if quality_ctx:
+        ctx_note = f"<p style=\"font-size:12px;color:#666;margin-top:12px;font-style:italic;\">{quality_ctx.get('industryBenchmark', '')}. Your ratio: {quality_ctx.get('flaggedRatio', 0)}%.</p>"
+
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,6 +191,10 @@ def write_html_report(result, output_dir):
         <div class="stat-card"><div class="value">{sum(smells['summary'].values())}</div><div class="label">Code Smells</div></div>
     </div>
 
+    {trend_html}
+
+    {roadmap_html}
+
     <div class="section">
         <h2>Language Distribution</h2>
         <div class="bar-chart" id="lang-chart"></div>
@@ -138,6 +211,15 @@ def write_html_report(result, output_dir):
             <svg id="donut" width="200" height="200" viewBox="0 0 200 200"></svg>
             <div id="donut-legend"></div>
         </div>
+        {ctx_note}
+    </div>
+
+    <div class="section">
+        <h2>Top Problem Files</h2>
+        <table>
+            <thead><tr><th>File</th><th>Total</th><th>Complexity</th><th>Security</th><th>Smells</th></tr></thead>
+            <tbody>{problem_rows}</tbody>
+        </table>
     </div>
 
     <div class="section">
@@ -168,6 +250,24 @@ def write_html_report(result, output_dir):
         <table>
             <thead><tr><th>Type</th><th>File</th><th>Line</th><th>Details</th></tr></thead>
             <tbody>{smell_rows}</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Duplicate Code</h2>
+        <p style="margin-bottom:12px;color:#666;"><strong>{duplicates.get('totalGroups', 0)}</strong> duplicate groups totaling <strong>{duplicates.get('totalDuplicateLines', 0):,}</strong> lines</p>
+        <table>
+            <thead><tr><th>#</th><th>Lines</th><th>Locations</th></tr></thead>
+            <tbody>{dup_rows}</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Unused Imports</h2>
+        <p style="margin-bottom:12px;color:#666;"><strong>{unused_imports.get('totalUnused', 0)}</strong> unused across <strong>{unused_imports.get('totalFiles', 0)}</strong> files</p>
+        <table>
+            <thead><tr><th>File</th><th>Unused Symbols</th></tr></thead>
+            <tbody>{unused_rows}</tbody>
         </table>
     </div>
 

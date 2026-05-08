@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from scanner import find_functions, analyze_complexity
+from analyzers import find_functions, analyze_complexity
 
 FIXTURES = Path(__file__).parent / "fixtures"
 

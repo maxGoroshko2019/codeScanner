@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from scanner import calculate_quality_score
+from analyzers import calculate_quality_score
 
 
 def make_result(flagged=0, total_funcs=100, high=0, medium=0, low=0, smells=0, files=100):

@@ -4,7 +4,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from scanner import count_lines
+from scanner import count_lines  # count_lines stays in scanner (traversal logic)
 
 FIXTURES = Path(__file__).parent / "fixtures"
 

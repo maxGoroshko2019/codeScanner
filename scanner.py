@@ -4,13 +4,24 @@
 import argparse
 import json
 import os
-import re
 import sys
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
-IGNORE_DIRS = {"node_modules", ".git", "dist", "build", "__pycache__", ".nx"}
+from analyzers import (
+    analyze_complexity,
+    analyze_security,
+    analyze_smells,
+    calculate_quality_score,
+    find_functions,
+)
+
+IGNORE_DIRS = {
+    "node_modules", ".git", "dist", "build", "__pycache__", ".nx",
+    ".vite", ".next", ".webpack", ".mf-types", "cdk.out", "coverage", ".nyc_output",
+    "nanofrontendTestBundle",
+}
 
 DEEP_ANALYSIS_EXTENSIONS = {".ts", ".tsx", ".js", ".jsx"}
 
@@ -26,29 +37,6 @@ LANGUAGE_MAP = {
     ".py": "Python",
 }
 
-FUNCTION_PATTERNS = [
-    re.compile(r"(?:export\s+)?(?:async\s+)?function\s+(\w+)\s*\("),
-    re.compile(r"(?:export\s+)?(?:const|let|var)\s+(\w+)\s*=\s*(?:async\s+)?\("),
-    re.compile(r"(?:export\s+)?(?:const|let|var)\s+(\w+)\s*=\s*(?:async\s+)?[^(]*=>\s*"),
-    re.compile(r"^\s+(?:async\s+)?(\w+)\s*\([^)]*\)\s*(?::\s*\w[^{]*)?\{", re.MULTILINE),
-]
-
-DECISION_PATTERN = re.compile(
-    r"\b(?:if|else\s+if|while|for|case|catch)\b|&&|\|\||\?\?"
-)
-
-SECRET_PATTERNS = [
-    (re.compile(r"""(?:api[_-]?key|secret|token|password|passwd|apikey)\s*[:=]\s*['"][A-Za-z0-9+/=_\-]{8,}['"]""", re.IGNORECASE), "high", "hardcoded_secret", "Possible hardcoded secret assigned to sensitive variable"),
-    (re.compile(r"AKIA[0-9A-Z]{16}"), "high", "aws_key", "AWS access key ID detected"),
-    (re.compile(r"-----BEGIN.*PRIVATE KEY-----"), "high", "private_key", "Private key detected"),
-    (re.compile(r"""\beval\s*\("""), "medium", "dangerous_function", "Use of eval()"),
-    (re.compile(r"""\bnew\s+Function\s*\("""), "medium", "dangerous_function", "Use of Function constructor"),
-    (re.compile(r"""\.innerHTML\s*="""), "medium", "dangerous_function", "Direct innerHTML assignment"),
-    (re.compile(r"""dangerouslySetInnerHTML"""), "medium", "dangerous_function", "Use of dangerouslySetInnerHTML"),
-    (re.compile(r"""['"]http://(?!localhost)"""), "low", "non_https", "Non-HTTPS URL (excluding localhost)"),
-    (re.compile(r"""eslint-disable.*security""", re.IGNORECASE), "low", "disabled_lint", "Security lint rule disabled"),
-]
-
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Scan a codebase and generate quality reports.")
@@ -56,6 +44,11 @@ def parse_args():
     parser.add_argument("--output-dir", default="./scan-results", help="Where to write reports (default: ./scan-results)")
     parser.add_argument("--format", choices=["json", "md", "html", "all"], default="all", help="Report format (default: all)")
     parser.add_argument("--ignore", action="append", default=[], help="Additional directory names to ignore (repeatable)")
+    parser.add_argument("--complexity-threshold", type=int, default=10, help="Cyclomatic complexity threshold (default: 10)")
+    parser.add_argument("--large-file-threshold", type=int, default=300, help="LOC threshold for large files (default: 300)")
+    parser.add_argument("--long-function-threshold", type=int, default=50, help="Line threshold for long functions (default: 50)")
+    parser.add_argument("--no-history", action="store_true", default=False, help="Skip historical trend comparison")
+    parser.add_argument("--no-duplicates", action="store_true", default=False, help="Skip duplicate code detection")
     return parser.parse_args()
 
 
@@ -107,266 +100,6 @@ def count_lines(filepath):
     return {"loc": loc, "comments": comments, "blanks": blanks, "total": total}
 
 
-def analyze_complexity(files):
-    functions = []
-
-    for file_info in files:
-        ext = Path(file_info["absolute_path"]).suffix.lower()
-        if ext not in DEEP_ANALYSIS_EXTENSIONS:
-            continue
-
-        try:
-            with open(file_info["absolute_path"], "r", encoding="utf-8", errors="ignore") as f:
-                content = f.read()
-                lines = content.split("\n")
-        except (OSError, PermissionError):
-            continue
-
-        file_functions = find_functions(lines, file_info["path"])
-        functions.extend(file_functions)
-
-    flagged = [fn for fn in functions if fn["complexity"] > 10]
-    flagged.sort(key=lambda fn: fn["complexity"], reverse=True)
-
-    return {
-        "totalFunctions": len(functions),
-        "flaggedFunctions": len(flagged),
-        "functions": flagged[:50],
-    }
-
-
-def find_functions(lines, filepath):
-    functions = []
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        func_name = None
-
-        for pattern in FUNCTION_PATTERNS:
-            match = pattern.search(line)
-            if match:
-                func_name = match.group(1)
-                break
-
-        if func_name:
-            func_start = i
-            brace_count = 0
-            started = False
-            func_end = i
-
-            for j in range(i, len(lines)):
-                brace_count += lines[j].count("{") - lines[j].count("}")
-                if not started and "{" in lines[j]:
-                    started = True
-                if started and brace_count <= 0:
-                    func_end = j
-                    break
-            else:
-                func_end = len(lines) - 1
-
-            func_body = "\n".join(lines[func_start:func_end + 1])
-            decisions = len(DECISION_PATTERN.findall(func_body))
-            complexity = 1 + decisions
-
-            functions.append({
-                "file": filepath,
-                "name": func_name,
-                "line": func_start + 1,
-                "complexity": complexity,
-                "length": func_end - func_start + 1,
-            })
-
-            i = func_end + 1
-        else:
-            i += 1
-
-    return functions
-
-
-def analyze_security(files):
-    issues = []
-    counts = {"high": 0, "medium": 0, "low": 0}
-
-    for file_info in files:
-        ext = Path(file_info["absolute_path"]).suffix.lower()
-        if ext not in DEEP_ANALYSIS_EXTENSIONS:
-            continue
-
-        try:
-            with open(file_info["absolute_path"], "r", encoding="utf-8", errors="ignore") as f:
-                lines = f.readlines()
-        except (OSError, PermissionError):
-            continue
-
-        for line_num, line in enumerate(lines, 1):
-            for pattern, severity, category, description in SECRET_PATTERNS:
-                if pattern.search(line):
-                    issues.append({
-                        "file": file_info["path"],
-                        "line": line_num,
-                        "severity": severity,
-                        "category": category,
-                        "description": description,
-                    })
-                    counts[severity] += 1
-                    break
-
-    issues.sort(key=lambda x: {"high": 0, "medium": 1, "low": 2}[x["severity"]])
-    return {"issues": issues[:100], "counts": counts}
-
-
-def analyze_smells(files):
-    issues = []
-    summary = {"long_functions": 0, "deep_nesting": 0, "long_params": 0, "large_files": 0}
-
-    for file_info in files:
-        ext = Path(file_info["absolute_path"]).suffix.lower()
-        if ext not in DEEP_ANALYSIS_EXTENSIONS:
-            continue
-
-        if file_info["metrics"]["loc"] > 300:
-            issues.append({
-                "file": file_info["path"],
-                "line": 1,
-                "type": "large_file",
-                "severity": "low",
-                "details": f"File has {file_info['metrics']['loc']} lines of code",
-            })
-            summary["large_files"] += 1
-
-        try:
-            with open(file_info["absolute_path"], "r", encoding="utf-8", errors="ignore") as f:
-                lines = f.readlines()
-        except (OSError, PermissionError):
-            continue
-
-        check_deep_nesting(lines, file_info["path"], issues, summary)
-        check_long_params(lines, file_info["path"], issues, summary)
-
-    smells_from_complexity = check_long_functions_from_complexity(files)
-    issues.extend(smells_from_complexity)
-    summary["long_functions"] = len(smells_from_complexity)
-
-    issues.sort(key=lambda x: {"high": 0, "medium": 1, "low": 2}[x["severity"]])
-    return {"issues": issues[:100], "summary": summary}
-
-
-def check_deep_nesting(lines, filepath, issues, summary):
-    max_depth = 0
-    current_depth = 0
-    max_depth_line = 0
-
-    for i, line in enumerate(lines, 1):
-        current_depth += line.count("{") - line.count("}")
-        if current_depth > max_depth:
-            max_depth = current_depth
-            max_depth_line = i
-
-    if max_depth > 4:
-        issues.append({
-            "file": filepath,
-            "line": max_depth_line,
-            "type": "deep_nesting",
-            "severity": "high",
-            "details": f"Nesting depth reaches {max_depth} levels",
-        })
-        summary["deep_nesting"] += 1
-
-
-def check_long_params(lines, filepath, issues, summary):
-    param_pattern = re.compile(r"(?:function\s+\w+|(?:const|let|var)\s+\w+\s*=\s*(?:async\s+)?)\s*\(([^)]{50,})\)")
-    for i, line in enumerate(lines, 1):
-        match = param_pattern.search(line)
-        if match:
-            params = match.group(1).split(",")
-            if len(params) > 5:
-                issues.append({
-                    "file": filepath,
-                    "line": i,
-                    "type": "long_params",
-                    "severity": "medium",
-                    "details": f"Function has {len(params)} parameters",
-                })
-                summary["long_params"] += 1
-
-
-def check_long_functions_from_complexity(files):
-    issues = []
-    for file_info in files:
-        ext = Path(file_info["absolute_path"]).suffix.lower()
-        if ext not in DEEP_ANALYSIS_EXTENSIONS:
-            continue
-
-        try:
-            with open(file_info["absolute_path"], "r", encoding="utf-8", errors="ignore") as f:
-                lines = f.read().split("\n")
-        except (OSError, PermissionError):
-            continue
-
-        funcs = find_functions(lines, file_info["path"])
-        for fn in funcs:
-            if fn["length"] > 50:
-                issues.append({
-                    "file": fn["file"],
-                    "line": fn["line"],
-                    "type": "long_function",
-                    "severity": "medium",
-                    "details": f"Function '{fn['name']}' is {fn['length']} lines",
-                })
-    return issues
-
-
-def calculate_quality_score(result):
-    complexity = result["analysis"]["complexity"]
-    security = result["analysis"]["security"]
-    smells = result["analysis"]["smells"]
-    total_files = result["repository"]["totalFiles"]
-
-    # Complexity factor (40%): penalize ratio of flagged functions
-    total_funcs = complexity["totalFunctions"]
-    if total_funcs > 0:
-        flagged_ratio = complexity["flaggedFunctions"] / total_funcs
-        complexity_score = max(0, 100 - (flagged_ratio * 500))
-    else:
-        complexity_score = 100
-
-    # Security factor (30%): penalize by severity
-    security_penalty = (
-        security["counts"]["high"] * 10
-        + security["counts"]["medium"] * 5
-        + security["counts"]["low"] * 2
-    )
-    security_score = max(0, 100 - min(security_penalty, 100))
-
-    # Smells factor (30%): penalize ratio of smells to files
-    total_smells = sum(smells["summary"].values())
-    if total_files > 0:
-        smell_ratio = total_smells / total_files
-        smells_score = max(0, 100 - (smell_ratio * 200))
-    else:
-        smells_score = 100
-
-    weighted = (
-        complexity_score * 0.4
-        + security_score * 0.3
-        + smells_score * 0.3
-    )
-    score = round(weighted)
-
-    if score >= 90:
-        grade = "A"
-    elif score >= 80:
-        grade = "B"
-    elif score >= 70:
-        grade = "C"
-    elif score >= 60:
-        grade = "D"
-    else:
-        grade = "F"
-
-    return score, grade
-
-
 def traverse(directory, ignore_dirs):
     root = Path(directory).resolve()
     if not root.is_dir():
@@ -398,7 +131,48 @@ def traverse(directory, ignore_dirs):
     return files
 
 
-def build_result(directory, files):
+def compute_problem_files(result):
+    file_issues = {}
+    for fn in result["analysis"]["complexity"]["functions"]:
+        f = fn["file"]
+        file_issues.setdefault(f, {"file": f, "totalIssues": 0, "breakdown": {"complexity": 0, "security": 0, "smells": 0}})
+        file_issues[f]["totalIssues"] += 1
+        file_issues[f]["breakdown"]["complexity"] += 1
+    for issue in result["analysis"]["security"]["issues"]:
+        f = issue["file"]
+        file_issues.setdefault(f, {"file": f, "totalIssues": 0, "breakdown": {"complexity": 0, "security": 0, "smells": 0}})
+        file_issues[f]["totalIssues"] += 1
+        file_issues[f]["breakdown"]["security"] += 1
+    for issue in result["analysis"]["smells"]["issues"]:
+        f = issue["file"]
+        file_issues.setdefault(f, {"file": f, "totalIssues": 0, "breakdown": {"complexity": 0, "security": 0, "smells": 0}})
+        file_issues[f]["totalIssues"] += 1
+        file_issues[f]["breakdown"]["smells"] += 1
+    ranked = sorted(file_issues.values(), key=lambda x: x["totalIssues"], reverse=True)
+    return ranked[:10]
+
+
+def compute_quality_context(result):
+    complexity = result["analysis"]["complexity"]
+    total_funcs = complexity["totalFunctions"]
+    if total_funcs > 0:
+        ratio = round(complexity["flaggedFunctions"] / total_funcs * 100, 1)
+    else:
+        ratio = 0.0
+    if ratio <= 3:
+        assessment = "excellent"
+    elif ratio <= 8:
+        assessment = "at_benchmark"
+    else:
+        assessment = "above_average"
+    return {
+        "flaggedRatio": ratio,
+        "industryBenchmark": "Typical well-maintained codebases have 3-8% of functions exceeding complexity threshold of 10",
+        "assessment": assessment,
+    }
+
+
+def build_result(directory, files, thresholds, output_dir, skip_history=False, skip_duplicates=False):
     languages = {}
     total_lines = 0
 
@@ -424,23 +198,50 @@ def build_result(directory, files):
             "complexity": {"totalFunctions": 0, "flaggedFunctions": 0, "functions": []},
             "security": {"issues": [], "counts": {"high": 0, "medium": 0, "low": 0}},
             "smells": {"issues": [], "summary": {"long_functions": 0, "deep_nesting": 0, "long_params": 0, "large_files": 0}},
+            "duplicates": {"totalGroups": 0, "totalDuplicateLines": 0, "groups": []},
+            "unusedImports": {"totalFiles": 0, "totalUnused": 0, "files": []},
+            "problemFiles": [],
         },
         "qualityScore": 100,
         "grade": "A",
+        "qualityContext": {},
+        "trend": None,
+        "roadmap": [],
     }
 
     print("  Analyzing complexity...", file=sys.stderr)
-    result["analysis"]["complexity"] = analyze_complexity(files)
+    result["analysis"]["complexity"] = analyze_complexity(files, thresholds["complexity"])
 
     print("  Scanning for security issues...", file=sys.stderr)
     result["analysis"]["security"] = analyze_security(files)
 
     print("  Detecting code smells...", file=sys.stderr)
-    result["analysis"]["smells"] = analyze_smells(files)
+    result["analysis"]["smells"] = analyze_smells(files, thresholds)
+
+    if not skip_duplicates:
+        from detection import detect_duplicates
+        print("  Detecting duplicate code...", file=sys.stderr)
+        result["analysis"]["duplicates"] = detect_duplicates(files)
+
+    from detection import detect_unused_imports
+    print("  Detecting unused imports...", file=sys.stderr)
+    result["analysis"]["unusedImports"] = detect_unused_imports(files)
+
+    result["analysis"]["problemFiles"] = compute_problem_files(result)
 
     score, grade = calculate_quality_score(result)
     result["qualityScore"] = score
     result["grade"] = grade
+    result["qualityContext"] = compute_quality_context(result)
+
+    if not skip_history:
+        from trends import compare_to_history, save_to_history
+        print("  Comparing to history...", file=sys.stderr)
+        result["trend"] = compare_to_history(result, output_dir)
+        save_to_history(result, output_dir)
+
+    from roadmap import generate_roadmap
+    result["roadmap"] = generate_roadmap(result)
 
     return result
 
@@ -462,10 +263,18 @@ def write_json_report(result, output_dir):
 def main():
     args = parse_args()
     ignore_dirs = IGNORE_DIRS | set(args.ignore)
+    thresholds = {
+        "complexity": args.complexity_threshold,
+        "large_file": args.large_file_threshold,
+        "long_function": args.long_function_threshold,
+    }
 
     print(f"Scanning: {args.directory}", file=sys.stderr)
     files = traverse(args.directory, ignore_dirs)
-    result = build_result(args.directory, files)
+    result = build_result(
+        args.directory, files, thresholds, args.output_dir,
+        skip_history=args.no_history, skip_duplicates=args.no_duplicates,
+    )
 
     fmt = args.format
     if fmt in ("json", "all"):
