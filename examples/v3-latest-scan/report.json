@@ -1,0 +1,2820 @@
+{
+  "scanId": "bcd72550-c05e-4bfb-8e39-2fa88e443c71",
+  "timestamp": "2026-05-08T12:37:51.549385+00:00",
+  "repository": {
+    "path": "C:\\Projects\\mdc-excel-addin",
+    "totalFiles": 3266,
+    "totalLines": 400284,
+    "languages": {
+      "Other": {
+        "files": 642,
+        "lines": 6176
+      },
+      "JavaScript": {
+        "files": 222,
+        "lines": 250077
+      },
+      "Markdown": {
+        "files": 21,
+        "lines": 1927
+      },
+      "JSON": {
+        "files": 32,
+        "lines": 51796
+      },
+      "TypeScript": {
+        "files": 2289,
+        "lines": 56331
+      },
+      "HTML": {
+        "files": 43,
+        "lines": 10115
+      },
+      "CSS": {
+        "files": 17,
+        "lines": 23862
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 89056,
+        "comments": 1711,
+        "blanks": 404,
+        "total": 91171
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 49374,
+        "comments": 1542,
+        "blanks": 367,
+        "total": 51283
+      }
+    },
+    {
+      "path": "package-lock.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 43127,
+        "comments": 0,
+        "blanks": 0,
+        "total": 43127
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/table-C1uyovNU.css",
+      "language": "CSS",
+      "metrics": {
+        "loc": 19268,
+        "comments": 6,
+        "blanks": 3215,
+        "total": 22489
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 12988,
+        "comments": 360,
+        "blanks": 248,
+        "total": 13596
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 11932,
+        "comments": 2826,
+        "blanks": 592,
+        "total": 15350
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 10456,
+        "comments": 1635,
+        "blanks": 34,
+        "total": 12125
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-BXaw1EsG.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 8761,
+        "comments": 1957,
+        "blanks": 250,
+        "total": 10968
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-Ca0_tOHc.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 5804,
+        "comments": 448,
+        "blanks": 173,
+        "total": 6425
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/.vite/manifest.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 4276,
+        "comments": 0,
+        "blanks": 0,
+        "total": 4276
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 3931,
+        "comments": 130,
+        "blanks": 235,
+        "total": 4296
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 3637,
+        "comments": 1097,
+        "blanks": 132,
+        "total": 4866
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/createTranslations-CJT7OseH.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 3126,
+        "comments": 25,
+        "blanks": 44,
+        "total": 3195
+      }
+    },
+    {
+      "path": "apps/api-core/cdk.out/mdc-excel-addin.template.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 2818,
+        "comments": 0,
+        "blanks": 0,
+        "total": 2818
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-BNxZvT1n.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 2754,
+        "comments": 901,
+        "blanks": 637,
+        "total": 4292
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/TreeSelect.module-CdbxQPGX.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 2544,
+        "comments": 152,
+        "blanks": 94,
+        "total": 2790
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/decimalValueFormatter-BDFSFJnB.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 2318,
+        "comments": 1732,
+        "blanks": 909,
+        "total": 4959
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Select-Fm756dm5.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1913,
+        "comments": 96,
+        "blanks": 24,
+        "total": 2033
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/createTheme-CJwEjYt9.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1910,
+        "comments": 180,
+        "blanks": 55,
+        "total": 2145
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Popper-gRxlYNHn.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1776,
+        "comments": 78,
+        "blanks": 299,
+        "total": 2153
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-DzZy6JTc.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1728,
+        "comments": 241,
+        "blanks": 33,
+        "total": 2002
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/lcov-report/handlers/getDataPoints/getDataPoints.helper.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 1603,
+        "comments": 1,
+        "blanks": 14,
+        "total": 1618
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/handlers/getDataPoints/getDataPoints.helper.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 1603,
+        "comments": 1,
+        "blanks": 14,
+        "total": 1618
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/format-ygP53TDb.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1435,
+        "comments": 1103,
+        "blanks": 266,
+        "total": 2804
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-uqQwZcdD.css",
+      "language": "CSS",
+      "metrics": {
+        "loc": 1358,
+        "comments": 8,
+        "blanks": 28,
+        "total": 1394
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/NumberFilter-Drv9yGC8.css",
+      "language": "CSS",
+      "metrics": {
+        "loc": 1313,
+        "comments": 8,
+        "blanks": 17,
+        "total": 1338
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 1285,
+        "comments": 8,
+        "blanks": 54,
+        "total": 1347
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/componentThemes-DeBFEw5S.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1226,
+        "comments": 4,
+        "blanks": 5,
+        "total": 1235
+      }
+    },
+    {
+      "path": "apps/api-core/template.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 1203,
+        "comments": 0,
+        "blanks": 0,
+        "total": 1203
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/emotion-element-f0de968e.browser.esm-S22762tF.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 1037,
+        "comments": 345,
+        "blanks": 276,
+        "total": 1658
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Modal-BJeOYB_f.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 936,
+        "comments": 63,
+        "blanks": 22,
+        "total": 1021
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Tabs-BKbczySY.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 826,
+        "comments": 31,
+        "blanks": 11,
+        "total": 868
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/NumberFilter.utils-B9Zz_4UC.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 816,
+        "comments": 176,
+        "blanks": 43,
+        "total": 1035
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/UncontrolledTreeSelect-K66wXifQ.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 815,
+        "comments": 5,
+        "blanks": 4,
+        "total": 824
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/virtualExposes-Dzv1FxsP.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 763,
+        "comments": 1,
+        "blanks": 4,
+        "total": 768
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/ButtonBase-CXnvMMUo.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 759,
+        "comments": 45,
+        "blanks": 34,
+        "total": 838
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/DateRange-DkrqInsY.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 751,
+        "comments": 61,
+        "blanks": 14,
+        "total": 826
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/lcov.info",
+      "language": "Other",
+      "metrics": {
+        "loc": 737,
+        "comments": 0,
+        "blanks": 0,
+        "total": 737
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/TextField-CPqAnpM3.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 732,
+        "comments": 18,
+        "blanks": 13,
+        "total": 763
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Menu-BEPqmNhK.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 731,
+        "comments": 14,
+        "blanks": 10,
+        "total": 755
+      }
+    },
+    {
+      "path": "apps/api-core/cdk.out/manifest.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 726,
+        "comments": 0,
+        "blanks": 0,
+        "total": 726
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/events.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 691,
+        "comments": 196,
+        "blanks": 0,
+        "total": 887
+      }
+    },
+    {
+      "path": "apps/_local-template/template.local.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 690,
+        "comments": 0,
+        "blanks": 0,
+        "total": 690
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-mgNoNK3v.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 624,
+        "comments": 452,
+        "blanks": 10,
+        "total": 1086
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 593,
+        "comments": 19,
+        "blanks": 12,
+        "total": 624
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/_arrayLikeKeys-CRo85Q-t.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 586,
+        "comments": 575,
+        "blanks": 237,
+        "total": 1398
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 584,
+        "comments": 1743,
+        "blanks": 0,
+        "total": 2327
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/MoodysThemeProvider-DKqQv5wp.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 558,
+        "comments": 31,
+        "blanks": 14,
+        "total": 603
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/TablePagination-DbhcYnJ0.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 537,
+        "comments": 9,
+        "blanks": 12,
+        "total": 558
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/eventBus.topics-FdO1IW3g.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 535,
+        "comments": 248,
+        "blanks": 99,
+        "total": 882
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 528,
+        "comments": 1690,
+        "blanks": 14,
+        "total": 2232
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Tooltip-BLpo9KyZ.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 511,
+        "comments": 4,
+        "blanks": 3,
+        "total": 518
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/styled-BEK-am9c.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 495,
+        "comments": 25,
+        "blanks": 33,
+        "total": 553
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 476,
+        "comments": 14,
+        "blanks": 31,
+        "total": 521
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 456,
+        "comments": 1,
+        "blanks": 51,
+        "total": 508
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-BA3_YcGB.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 448,
+        "comments": 1,
+        "blanks": 9,
+        "total": 458
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/ListItem-DcVa8te5.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 427,
+        "comments": 9,
+        "blanks": 7,
+        "total": 443
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/table/MdcTable/mocks/mockData.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 424,
+        "comments": 0,
+        "blanks": 0,
+        "total": 424
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/pageAnalytics.utils-DKz-TvPb.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 423,
+        "comments": 4,
+        "blanks": 35,
+        "total": 462
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/api/gridApi.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 419,
+        "comments": 505,
+        "blanks": 0,
+        "total": 924
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-DPXbzY9X.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 407,
+        "comments": 5,
+        "blanks": 5,
+        "total": 417
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Drawer-CalGHYpu.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 406,
+        "comments": 8,
+        "blanks": 4,
+        "total": 418
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/eventBus.types.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 406,
+        "comments": 0,
+        "blanks": 0,
+        "total": 406
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/utils/eventBus/eventBus.types.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 406,
+        "comments": 1,
+        "blanks": 0,
+        "total": 407
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/FormControlLabel-CrQZCHwM.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 404,
+        "comments": 8,
+        "blanks": 5,
+        "total": 417
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Snackbar-BcmHS9Ht.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 402,
+        "comments": 39,
+        "blanks": 14,
+        "total": 455
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/WidgetCard-BffA1e9n.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 395,
+        "comments": 9,
+        "blanks": 10,
+        "total": 414
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/SearchResultsPeers-Bwo_SviO.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 394,
+        "comments": 11,
+        "blanks": 11,
+        "total": 416
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/ControlledTreeSelect-CNg-OGg-.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 389,
+        "comments": 6,
+        "blanks": 2,
+        "total": 397
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/config/fetchConfig.schema.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 389,
+        "comments": 0,
+        "blanks": 14,
+        "total": 403
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/lcov-report/config/fetchConfig.schema.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 389,
+        "comments": 0,
+        "blanks": 14,
+        "total": 403
+      }
+    },
+    {
+      "path": ".github/scripts/trigger-pipeline.cjs",
+      "language": "Other",
+      "metrics": {
+        "loc": 388,
+        "comments": 18,
+        "blanks": 68,
+        "total": 474
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Grid-CL_LjOfx.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 387,
+        "comments": 6,
+        "blanks": 4,
+        "total": 397
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Chip-BVD0Dk7h.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 383,
+        "comments": 6,
+        "blanks": 4,
+        "total": 393
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/DialogContent-BoFow-6D.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 372,
+        "comments": 7,
+        "blanks": 9,
+        "total": 388
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/colDef.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 358,
+        "comments": 506,
+        "blanks": 0,
+        "total": 864
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index.module-61UDXeON.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 353,
+        "comments": 1,
+        "blanks": 1,
+        "total": 355
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/clover.xml",
+      "language": "Other",
+      "metrics": {
+        "loc": 352,
+        "comments": 0,
+        "blanks": 0,
+        "total": 352
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/lcov-report/handlers/getDataPoints/getDataPoints.constants.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 350,
+        "comments": 0,
+        "blanks": 14,
+        "total": 364
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/handlers/getDataPoints/getDataPoints.constants.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 350,
+        "comments": 0,
+        "blanks": 14,
+        "total": 364
+      }
+    },
+    {
+      "path": "plopfile.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 347,
+        "comments": 7,
+        "blanks": 30,
+        "total": 384
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/SelectableChip-0oOXJh0R.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 344,
+        "comments": 1,
+        "blanks": 8,
+        "total": 353
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/lcov-report/handlers/getSecurities/getSecurities.helper.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 341,
+        "comments": 0,
+        "blanks": 14,
+        "total": 355
+      }
+    },
+    {
+      "path": "apps/api-core/testing/reports/coverage/handlers/getSecurities/getSecurities.helper.ts.html",
+      "language": "HTML",
+      "metrics": {
+        "loc": 341,
+        "comments": 0,
+        "blanks": 14,
+        "total": 355
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 332,
+        "comments": 0,
+        "blanks": 0,
+        "total": 332
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/utils/eventBus/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 332,
+        "comments": 1,
+        "blanks": 0,
+        "total": 333
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/MdcTabs-DF6Js4m8.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 327,
+        "comments": 5,
+        "blanks": 9,
+        "total": 341
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Modal-BxlvfSGx.css",
+      "language": "CSS",
+      "metrics": {
+        "loc": 326,
+        "comments": 2,
+        "blanks": 4,
+        "total": 332
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/clsx-Cwp20X_4.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 322,
+        "comments": 18,
+        "blanks": 69,
+        "total": 409
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/AutoLayout-D6zBfX7s.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 316,
+        "comments": 168,
+        "blanks": 50,
+        "total": 534
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/_baseClone-3YpLYV1j.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 307,
+        "comments": 180,
+        "blanks": 82,
+        "total": 569
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/HowToModal-CdJ9stry.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 302,
+        "comments": 9,
+        "blanks": 7,
+        "total": 318
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/fetcher-DG2RaoPW.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 300,
+        "comments": 2,
+        "blanks": 11,
+        "total": 313
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/Carousel-DdHMUD7r.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 297,
+        "comments": 7,
+        "blanks": 11,
+        "total": 315
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/ListItemIcon-CdcpaduZ.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 284,
+        "comments": 1,
+        "blanks": 8,
+        "total": 293
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/main.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 282,
+        "comments": 0,
+        "blanks": 0,
+        "total": 282
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/index-DbED4Kc1.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 279,
+        "comments": 162,
+        "blanks": 55,
+        "total": 496
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/typography-DCiH_sEJ.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 277,
+        "comments": 1,
+        "blanks": 3,
+        "total": 281
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/createTranslations/createTranslations.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 275,
+        "comments": 0,
+        "blanks": 0,
+        "total": 275
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/utils/createTranslations/createTranslations.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 275,
+        "comments": 1,
+        "blanks": 0,
+        "total": 276
+      }
+    }
+  ],
+  "analysis": {
+    "complexity": {
+      "totalFunctions": 14399,
+      "flaggedFunctions": 682,
+      "functions": [
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-Ca0_tOHc.js",
+          "name": "getSelectorSpecificity",
+          "line": 951,
+          "complexity": 9011,
+          "length": 5476
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "name": "T",
+          "line": 103,
+          "complexity": 4341,
+          "length": 2
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "name": "x",
+          "line": 163,
+          "complexity": 1369,
+          "length": 1
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createTranslations-CJT7OseH.js",
+          "name": "regexSafe",
+          "line": 1060,
+          "complexity": 611,
+          "length": 2137
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "name": "createDOMPurify",
+          "line": 294,
+          "complexity": 335,
+          "length": 1039
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-Ca0_tOHc.js",
+          "name": "r",
+          "line": 460,
+          "complexity": 233,
+          "length": 1
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/decimalValueFormatter-BDFSFJnB.js",
+          "name": "naturalLogarithm",
+          "line": 3396,
+          "complexity": 213,
+          "length": 1565
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+          "name": "useAutocomplete",
+          "line": 3857,
+          "complexity": 208,
+          "length": 825
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "name": "a",
+          "line": 144,
+          "complexity": 199,
+          "length": 1
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/prettify.js",
+          "name": "k",
+          "line": 2,
+          "complexity": 188,
+          "length": 1
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/lcov-report/prettify.js",
+          "name": "k",
+          "line": 2,
+          "complexity": 188,
+          "length": 1
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "Ej",
+          "line": 244,
+          "complexity": 177,
+          "length": 14
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "hd",
+          "line": 129,
+          "complexity": 167,
+          "length": 9
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "name": "n",
+          "line": 126,
+          "complexity": 164,
+          "length": 1
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "Og",
+          "line": 156,
+          "complexity": 133,
+          "length": 11
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+          "name": "useSlider",
+          "line": 3313,
+          "complexity": 96,
+          "length": 493
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "dk",
+          "line": 272,
+          "complexity": 95,
+          "length": 7
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BXaw1EsG.js",
+          "name": "iifeDecompress",
+          "line": 2651,
+          "complexity": 89,
+          "length": 386
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createTranslations-CJT7OseH.js",
+          "name": "translate",
+          "line": 507,
+          "complexity": 84,
+          "length": 173
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DzZy6JTc.js",
+          "name": "NumberFormatBase",
+          "line": 869,
+          "complexity": 84,
+          "length": 321
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "jd",
+          "line": 96,
+          "complexity": 82,
+          "length": 2
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+          "name": "useFieldV6TextField",
+          "line": 11058,
+          "complexity": 78,
+          "length": 364
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/emotion-element-f0de968e.browser.esm-S22762tF.js",
+          "name": "prefix",
+          "line": 866,
+          "complexity": 77,
+          "length": 172
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+          "name": "SwipeableDrawer2",
+          "line": 11909,
+          "complexity": 74,
+          "length": 326
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BXaw1EsG.js",
+          "name": "pushManagerFactory",
+          "line": 3916,
+          "complexity": 69,
+          "length": 292
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/TreeSelect.module-CdbxQPGX.js",
+          "name": "useTreeViewKeyboardNavigation",
+          "line": 1434,
+          "complexity": 66,
+          "length": 230
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DzZy6JTc.js",
+          "name": "useNumericFormat",
+          "line": 1437,
+          "complexity": 63,
+          "length": 176
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/decimalValueFormatter-BDFSFJnB.js",
+          "name": "divide",
+          "line": 2676,
+          "complexity": 61,
+          "length": 262
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BNxZvT1n.js",
+          "name": "factory",
+          "line": 3090,
+          "complexity": 59,
+          "length": 276
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "name": "getStockMenuItem",
+          "line": 77776,
+          "complexity": 59,
+          "length": 248
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Tabs-BKbczySY.js",
+          "name": "Tabs2",
+          "line": 441,
+          "complexity": 58,
+          "length": 425
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Select-Fm756dm5.js",
+          "name": "SelectInput2",
+          "line": 1557,
+          "complexity": 56,
+          "length": 360
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "hj",
+          "line": 217,
+          "complexity": 56,
+          "length": 6
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ButtonBase-CXnvMMUo.js",
+          "name": "ButtonBase2",
+          "line": 624,
+          "complexity": 55,
+          "length": 212
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DzZy6JTc.js",
+          "name": "removeFormatting",
+          "line": 1274,
+          "complexity": 54,
+          "length": 134
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "name": "HeaderCompTemplate",
+          "line": 8576,
+          "complexity": 50,
+          "length": 266
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "name": "CellComp",
+          "line": 50010,
+          "complexity": 50,
+          "length": 231
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "name": "DATE_TREE_LIST_PATH_GETTER",
+          "line": 84059,
+          "complexity": 50,
+          "length": 263
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "kk",
+          "line": 280,
+          "complexity": 50,
+          "length": 3
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/emotion-element-f0de968e.browser.esm-S22762tF.js",
+          "name": "parse",
+          "line": 508,
+          "complexity": 49,
+          "length": 119
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "name": "createNodeData",
+          "line": 27508,
+          "complexity": 49,
+          "length": 251
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "name": "syncColumnWithStateItem",
+          "line": 4088,
+          "complexity": 48,
+          "length": 121
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "name": "render",
+          "line": 5103,
+          "complexity": 48,
+          "length": 123
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/decimalValueFormatter-BDFSFJnB.js",
+          "name": "finalise",
+          "line": 2944,
+          "complexity": 47,
+          "length": 165
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "Oj",
+          "line": 260,
+          "complexity": 47,
+          "length": 3
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "name": "tc",
+          "line": 80,
+          "complexity": 46,
+          "length": 2
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BXaw1EsG.js",
+          "name": "syncManagerOnlineFactory",
+          "line": 2004,
+          "complexity": 45,
+          "length": 157
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BNxZvT1n.js",
+          "name": "function",
+          "line": 2721,
+          "complexity": 44,
+          "length": 208
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Select-Fm756dm5.js",
+          "name": "InputBase2",
+          "line": 432,
+          "complexity": 44,
+          "length": 234
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Modal-BJeOYB_f.js",
+          "name": "FocusTrap",
+          "line": 101,
+          "complexity": 42,
+          "length": 155
+        }
+      ]
+    },
+    "security": {
+      "issues": [
+        {
+          "file": "libs/backend-utils/src/config/config.accessors.test.ts",
+          "line": 21,
+          "severity": "high",
+          "category": "hardcoded_secret",
+          "description": "Possible hardcoded secret assigned to sensitive variable"
+        },
+        {
+          "file": "libs/backend-utils/src/database/docdb/docdb.client.test.ts",
+          "line": 18,
+          "severity": "high",
+          "category": "hardcoded_secret",
+          "description": "Possible hardcoded secret assigned to sensitive variable"
+        },
+        {
+          "file": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+          "line": 47,
+          "severity": "high",
+          "category": "hardcoded_secret",
+          "description": "Possible hardcoded secret assigned to sensitive variable"
+        },
+        {
+          "file": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+          "line": 96,
+          "severity": "high",
+          "category": "hardcoded_secret",
+          "description": "Possible hardcoded secret assigned to sensitive variable"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+          "line": 10438,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+          "line": 10617,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+          "line": 319,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 104,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 126,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 163,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/clsx-Cwp20X_4.js",
+          "line": 130,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 827,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 1405,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 1409,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 1428,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 2417,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 2946,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 4023,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-Ca0_tOHc.js",
+          "line": 6033,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "line": 7105,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "line": 7159,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "line": 7289,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "line": 43923,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+          "line": 330,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+          "line": 331,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+          "line": 2044,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+          "line": 2060,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 7282,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 11474,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 11685,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 12526,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 17087,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 36061,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 41917,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 42570,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 43353,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 43912,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 44284,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 44298,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 47323,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 47332,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 50130,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 52251,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 69591,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 70012,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 86221,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 86707,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 88105,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 88108,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 88554,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 88555,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 88556,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 39,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 62,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 65,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 70,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 139,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 240,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 241,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 247,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 249,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 273,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of dangerouslySetInnerHTML"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts",
+          "line": 436,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/prettify.js",
+          "line": 2,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/sorter.js",
+          "line": 84,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/lcov-report/prettify.js",
+          "line": 2,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/lcov-report/sorter.js",
+          "line": 84,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Direct innerHTML assignment"
+        },
+        {
+          "file": "libs/backend-utils/src/config/fetchConfig.schema.test.ts",
+          "line": 69,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "libs/backend-utils/src/config/fetchConfig.schema.test.ts",
+          "line": 73,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 103,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 144,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 478,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 479,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 480,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 811,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 3264,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 3286,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 3315,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 31,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 1019,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 2398,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 2869,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 3207,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 3407,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 3826,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 4281,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 4707,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 4893,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 5337,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 5571,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 5816,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 5997,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 6299,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 6637,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 7348,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 7680,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 7931,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 8041,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 8297,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 8461,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        }
+      ],
+      "counts": {
+        "high": 4,
+        "medium": 63,
+        "low": 100
+      }
+    },
+    "smells": {
+      "issues": [
+        {
+          "file": "libs/backend-utils/src/config/fetchConfig.schema.ts",
+          "line": 65,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.test.ts",
+          "line": 56,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.ts",
+          "line": 24,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts",
+          "line": 51,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.ts",
+          "line": 38,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/requestValidation.middleware.test.ts",
+          "line": 24,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+          "line": 60,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+          "line": 39,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/webpack.config.ts",
+          "line": 148,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+          "line": 5449,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/api-BglSbvNM.js",
+          "line": 137,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/appContextProviderGenerator-9_ibqJVL.js",
+          "line": 42,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AutoClampTypography-CwHtWuiI.js",
+          "line": 151,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Autocomplete-98oqbeyo.js",
+          "line": 9445,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AutoLayout-D6zBfX7s.js",
+          "line": 505,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ButtonBase-CXnvMMUo.js",
+          "line": 492,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Carousel-DdHMUD7r.js",
+          "line": 297,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Chart-B7RA2dgD.js",
+          "line": 103,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/clsx-Cwp20X_4.js",
+          "line": 232,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/componentThemes-DeBFEw5S.js",
+          "line": 420,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/composeClasses-H-KfFbIF.js",
+          "line": 19,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ControlledTreeSelect-CNg-OGg-.js",
+          "line": 263,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createStyled-DQ1s7zJg.js",
+          "line": 153,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createTheme-CJwEjYt9.js",
+          "line": 1238,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createTranslations-CJT7OseH.js",
+          "line": 2842,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 10 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/DateRange-DkrqInsY.js",
+          "line": 747,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 12 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/decimalValueFormatter-BDFSFJnB.js",
+          "line": 2859,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/DialogContent-BoFow-6D.js",
+          "line": 251,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Disclaimer-B8TNMHxW.js",
+          "line": 71,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Drawer-CalGHYpu.js",
+          "line": 203,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Drawer-CDsC3u8T.js",
+          "line": 96,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/emotion-element-f0de968e.browser.esm-S22762tF.js",
+          "line": 1408,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ErrorPage-BDnPOqZ-.js",
+          "line": 118,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/eventBus.topics-FdO1IW3g.js",
+          "line": 213,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/fetcher-DG2RaoPW.js",
+          "line": 159,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/FormControlLabel-CrQZCHwM.js",
+          "line": 259,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/getThemeProps-DXlJtbGh.js",
+          "line": 26,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Grid-CL_LjOfx.js",
+          "line": 76,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Grow-CJsjU1BE.js",
+          "line": 149,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/HowToModal-CdJ9stry.js",
+          "line": 289,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/htmlSanitizer-BG2xV9Tp.js",
+          "line": 1107,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/IllustrativeIcon-CJL5pH0A.js",
+          "line": 5748,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 10 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BNxZvT1n.js",
+          "line": 3752,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-BXaw1EsG.js",
+          "line": 2073,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-Ca0_tOHc.js",
+          "line": 6173,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 10 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-CNFqbBCv.js",
+          "line": 29,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-Cr3HM7Hj.js",
+          "line": 23,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DbED4Kc1.js",
+          "line": 448,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DhnrmtM6.js",
+          "line": 21,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index-DzZy6JTc.js",
+          "line": 1705,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/index.esm-DqYj6TQe.js",
+          "line": 3862,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ListItem-DcVa8te5.js",
+          "line": 418,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/MdcTabs-DF6Js4m8.js",
+          "line": 217,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Menu-BEPqmNhK.js",
+          "line": 220,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Modal-BJeOYB_f.js",
+          "line": 199,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Modal-BYI05BKv.js",
+          "line": 108,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/MoodysThemeProvider-DKqQv5wp.js",
+          "line": 78,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/NumberFilter.utils-B9Zz_4UC.js",
+          "line": 581,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/parseDeclaration-CqALo_ly.js",
+          "line": 25,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 12 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Popper-gRxlYNHn.js",
+          "line": 1789,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/preload-helper-DcJTy6PV.js",
+          "line": 44,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/remoteEntry.next.js",
+          "line": 3789,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 10 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/resolveProps-DPPdw89J.js",
+          "line": 26,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/responsiveFontSizes-PB0Er5D7.js",
+          "line": 40,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/SearchResultsPeers-Bwo_SviO.js",
+          "line": 401,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Select-Fm756dm5.js",
+          "line": 1712,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/SelectableChip-0oOXJh0R.js",
+          "line": 339,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/SingleSelectChip-C5Z3Hs4X.js",
+          "line": 112,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/SkeletonGenerator-Dlw8aRaB.js",
+          "line": 135,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Snackbar-B0Z5B7cB.js",
+          "line": 96,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Snackbar-BcmHS9Ht.js",
+          "line": 108,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Stack-DYBOE3hn.js",
+          "line": 55,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/styled-BEK-am9c.js",
+          "line": 495,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/table-BN44PBjU.js",
+          "line": 41589,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/TablePagination-DbhcYnJ0.js",
+          "line": 515,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Tabs-BKbczySY.js",
+          "line": 611,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/TextField-CPqAnpM3.js",
+          "line": 97,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ToggleButton-Dj0hQgbI.js",
+          "line": 93,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/ToggleButtonGroup-CP7s5FZ8.js",
+          "line": 193,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/Tooltip-BLpo9KyZ.js",
+          "line": 508,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/TreeSelect.module-CdbxQPGX.js",
+          "line": 1764,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/UncontrolledTreeSelect-K66wXifQ.js",
+          "line": 687,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/useTreeNodes-C_EkRDeX.js",
+          "line": 54,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/utils-BKy0LdFl.js",
+          "line": 303,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 10 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/WidgetCard-BffA1e9n.js",
+          "line": 203,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/widgets/DateRange/theme/default-theme.d.ts",
+          "line": 5,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/index.d.ts",
+          "line": 83,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/table/MdcTable/table.styles.d.ts",
+          "line": 9,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/themes/chartTheme.d.ts",
+          "line": 71,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts",
+          "line": 1539,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 8 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/widgets/DateRange/theme/default-theme.d.ts",
+          "line": 5,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/utils/eventBus/index.d.ts",
+          "line": 83,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/@mf-types/compiled-types/src/packages/table/MdcTable/table.styles.d.ts",
+          "line": 9,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/sorter.js",
+          "line": 174,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/api-core/testing/reports/coverage/lcov-report/sorter.js",
+          "line": 174,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/api-core/src/config/loggerOptions.test.ts",
+          "line": 11,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+          "line": 56,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/AdapterDateFns-C5zg0vMt.js",
+          "line": 10296,
+          "type": "long_params",
+          "severity": "medium",
+          "details": "Function has 8 parameters"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/createTranslations-CJT7OseH.js",
+          "line": 2767,
+          "type": "long_params",
+          "severity": "medium",
+          "details": "Function has 6 parameters"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTestBundle/emotion-element-f0de968e.browser.esm-S22762tF.js",
+          "line": 284,
+          "type": "long_params",
+          "severity": "medium",
+          "details": "Function has 7 parameters"
+        }
+      ],
+      "summary": {
+        "long_functions": 580,
+        "deep_nesting": 97,
+        "long_params": 71,
+        "large_files": 71
+      }
+    }
+  },
+  "qualityScore": 45,
+  "grade": "F"
+}
