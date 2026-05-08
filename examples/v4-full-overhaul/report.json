@@ -1,0 +1,2258 @@
+{
+  "scanId": "9fb18f7b-8e8d-454f-ab10-eb62560a0ede",
+  "timestamp": "2026-05-08T13:13:48.372785+00:00",
+  "repository": {
+    "path": "C:\\Projects\\mdc-excel-addin",
+    "totalFiles": 2043,
+    "totalLines": 101428,
+    "languages": {
+      "Other": {
+        "files": 61,
+        "lines": 4492
+      },
+      "JavaScript": {
+        "files": 3,
+        "lines": 353
+      },
+      "Markdown": {
+        "files": 21,
+        "lines": 1927
+      },
+      "JSON": {
+        "files": 26,
+        "lines": 43954
+      },
+      "TypeScript": {
+        "files": 1930,
+        "lines": 50677
+      },
+      "HTML": {
+        "files": 2,
+        "lines": 25
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "package-lock.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 43127,
+        "comments": 0,
+        "blanks": 0,
+        "total": 43127
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 1285,
+        "comments": 8,
+        "blanks": 54,
+        "total": 1347
+      }
+    },
+    {
+      "path": "apps/api-core/template.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 1203,
+        "comments": 0,
+        "blanks": 0,
+        "total": 1203
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/events.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 691,
+        "comments": 196,
+        "blanks": 0,
+        "total": 887
+      }
+    },
+    {
+      "path": "apps/_local-template/template.local.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 690,
+        "comments": 0,
+        "blanks": 0,
+        "total": 690
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 584,
+        "comments": 1743,
+        "blanks": 0,
+        "total": 2327
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 528,
+        "comments": 1690,
+        "blanks": 14,
+        "total": 2232
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 456,
+        "comments": 1,
+        "blanks": 51,
+        "total": 508
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/table/MdcTable/mocks/mockData.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 424,
+        "comments": 0,
+        "blanks": 0,
+        "total": 424
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/api/gridApi.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 419,
+        "comments": 505,
+        "blanks": 0,
+        "total": 924
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/eventBus.types.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 406,
+        "comments": 0,
+        "blanks": 0,
+        "total": 406
+      }
+    },
+    {
+      "path": ".github/scripts/trigger-pipeline.cjs",
+      "language": "Other",
+      "metrics": {
+        "loc": 388,
+        "comments": 18,
+        "blanks": 68,
+        "total": 474
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/colDef.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 358,
+        "comments": 506,
+        "blanks": 0,
+        "total": 864
+      }
+    },
+    {
+      "path": "plopfile.js",
+      "language": "JavaScript",
+      "metrics": {
+        "loc": 347,
+        "comments": 7,
+        "blanks": 30,
+        "total": 384
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 332,
+        "comments": 0,
+        "blanks": 0,
+        "total": 332
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/main.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 282,
+        "comments": 0,
+        "blanks": 0,
+        "total": 282
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/createTranslations/createTranslations.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 275,
+        "comments": 0,
+        "blanks": 0,
+        "total": 275
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/charts/charts/chartComp/services/chartTranslationService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 270,
+        "comments": 0,
+        "blanks": 0,
+        "total": 270
+      }
+    },
+    {
+      "path": ".claude/skills/implement-change/PATTERNS.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 262,
+        "comments": 6,
+        "blanks": 63,
+        "total": 331
+      }
+    },
+    {
+      "path": "apps/plugin/webpack.config.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 255,
+        "comments": 0,
+        "blanks": 17,
+        "total": 272
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/api/gridApiFunctions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 255,
+        "comments": 0,
+        "blanks": 0,
+        "total": 255
+      }
+    },
+    {
+      "path": "scripts/build-local-template.cjs",
+      "language": "Other",
+      "metrics": {
+        "loc": 254,
+        "comments": 70,
+        "blanks": 46,
+        "total": 370
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/context/context.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 253,
+        "comments": 1,
+        "blanks": 0,
+        "total": 254
+      }
+    },
+    {
+      "path": ".claude/skills/implement-change/SKILL.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 252,
+        "comments": 21,
+        "blanks": 85,
+        "total": 358
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/iExcelCreator.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 250,
+        "comments": 349,
+        "blanks": 0,
+        "total": 599
+      }
+    },
+    {
+      "path": ".github/workflows/execute-chores.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 246,
+        "comments": 0,
+        "blanks": 52,
+        "total": 298
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/axis/axis.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 239,
+        "comments": 31,
+        "blanks": 0,
+        "total": 270
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 224,
+        "comments": 0,
+        "blanks": 7,
+        "total": 231
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/series/series.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 216,
+        "comments": 5,
+        "blanks": 0,
+        "total": 221
+      }
+    },
+    {
+      "path": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 210,
+        "comments": 3,
+        "blanks": 38,
+        "total": 251
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/series/cartesian/cartesianSeries.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 205,
+        "comments": 5,
+        "blanks": 0,
+        "total": 210
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/table/MdcTable/constants/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 199,
+        "comments": 0,
+        "blanks": 0,
+        "total": 199
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/iSparklineCellRendererParams.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 195,
+        "comments": 243,
+        "blanks": 0,
+        "total": 438
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/rendering/row/rowCtrl.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 188,
+        "comments": 0,
+        "blanks": 0,
+        "total": 188
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-types/src/chart/themeOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 188,
+        "comments": 40,
+        "blanks": 0,
+        "total": 228
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/validation/rules/gridOptionsValidations.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 183,
+        "comments": 0,
+        "blanks": 0,
+        "total": 183
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/data/dataModel.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 176,
+        "comments": 8,
+        "blanks": 0,
+        "total": 184
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-types/src/chart/annotationsOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 175,
+        "comments": 62,
+        "blanks": 0,
+        "total": 237
+      }
+    },
+    {
+      "path": ".agents/skills/write-unit-tests/reference/typescript-patterns.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 170,
+        "comments": 18,
+        "blanks": 54,
+        "total": 242
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/eventBus/eventBus.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 165,
+        "comments": 0,
+        "blanks": 0,
+        "total": 165
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/table/MdcTable/utils/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 162,
+        "comments": 0,
+        "blanks": 0,
+        "total": 162
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/rendering/cell/cellCtrl.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 161,
+        "comments": 5,
+        "blanks": 0,
+        "total": 166
+      }
+    },
+    {
+      "path": "package.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 160,
+        "comments": 0,
+        "blanks": 0,
+        "total": 160
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/iCallbackParams.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 160,
+        "comments": 71,
+        "blanks": 0,
+        "total": 231
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/rendering/rowRenderer.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 160,
+        "comments": 30,
+        "blanks": 0,
+        "total": 190
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/chart.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 160,
+        "comments": 5,
+        "blanks": 0,
+        "total": 165
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/agColumn.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 158,
+        "comments": 6,
+        "blanks": 0,
+        "total": 164
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/iRowNode.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 157,
+        "comments": 122,
+        "blanks": 0,
+        "total": 279
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/series/polar/donutSeries.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 149,
+        "comments": 0,
+        "blanks": 0,
+        "total": 149
+      }
+    },
+    {
+      "path": "libs/backend-utils/src/config/fetchConfig.schema.test.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 145,
+        "comments": 0,
+        "blanks": 22,
+        "total": 167
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/rowNode.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 145,
+        "comments": 176,
+        "blanks": 0,
+        "total": 321
+      }
+    },
+    {
+      "path": ".agents/skills/write-unit-tests/reference/jest-patterns.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 142,
+        "comments": 22,
+        "blanks": 42,
+        "total": 206
+      }
+    },
+    {
+      "path": ".github/workflows/s3-sync-federatedConsumer-json.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 136,
+        "comments": 0,
+        "blanks": 16,
+        "total": 152
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/sparklines/sparkline/sparkline.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 134,
+        "comments": 60,
+        "blanks": 0,
+        "total": 194
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/series/polar/pieSeries.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 131,
+        "comments": 0,
+        "blanks": 0,
+        "total": 131
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/columns/columnModel.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 130,
+        "comments": 0,
+        "blanks": 0,
+        "total": 130
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/legend.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 130,
+        "comments": 37,
+        "blanks": 0,
+        "total": 167
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/theme/muiThemes/componentThemes.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 128,
+        "comments": 0,
+        "blanks": 0,
+        "total": 128
+      }
+    },
+    {
+      "path": ".cursor/rules/unit-tests.mdc",
+      "language": "Other",
+      "metrics": {
+        "loc": 127,
+        "comments": 12,
+        "blanks": 38,
+        "total": 177
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/iColumn.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 124,
+        "comments": 118,
+        "blanks": 0,
+        "total": 242
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/dragAndDrop/dragAndDropService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 120,
+        "comments": 63,
+        "blanks": 0,
+        "total": 183
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/themes/chartTheme.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 119,
+        "comments": 0,
+        "blanks": 0,
+        "total": 119
+      }
+    },
+    {
+      "path": "libs/backend-utils/src/config/fetchConfig.schema.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 118,
+        "comments": 0,
+        "blanks": 10,
+        "total": 128
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/set-filter/setFilter/setFilter.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 118,
+        "comments": 9,
+        "blanks": 0,
+        "total": 127
+      }
+    },
+    {
+      "path": "README.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 116,
+        "comments": 0,
+        "blanks": 65,
+        "total": 181
+      }
+    },
+    {
+      "path": "libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 116,
+        "comments": 0,
+        "blanks": 3,
+        "total": 119
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/propertyKeys.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 115,
+        "comments": 18,
+        "blanks": 0,
+        "total": 133
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/gridState.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 115,
+        "comments": 45,
+        "blanks": 0,
+        "total": 160
+      }
+    },
+    {
+      "path": "CLAUDE.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 114,
+        "comments": 0,
+        "blanks": 49,
+        "total": 163
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/module-support.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 114,
+        "comments": 0,
+        "blanks": 0,
+        "total": 114
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/services/analytics/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 110,
+        "comments": 0,
+        "blanks": 0,
+        "total": 110
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-types/src/chart/chartOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 110,
+        "comments": 102,
+        "blanks": 0,
+        "total": 212
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/set-filter/setFilter/setValueModel.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 108,
+        "comments": 25,
+        "blanks": 0,
+        "total": 133
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/interfaces/IChartService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 108,
+        "comments": 49,
+        "blanks": 0,
+        "total": 157
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/focusService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 107,
+        "comments": 2,
+        "blanks": 0,
+        "total": 109
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/gridBodyComp/gridBodyCtrl.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 107,
+        "comments": 0,
+        "blanks": 0,
+        "total": 107
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/widgets/popupService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 107,
+        "comments": 1,
+        "blanks": 0,
+        "total": 108
+      }
+    },
+    {
+      "path": ".claude/skills/plan-ticket/SKILL.md",
+      "language": "Markdown",
+      "metrics": {
+        "loc": 105,
+        "comments": 0,
+        "blanks": 39,
+        "total": 144
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/filter/provided/simpleFilter.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 104,
+        "comments": 8,
+        "blanks": 0,
+        "total": 112
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/client-side-row-model/clientSideRowModel/clientSideRowModel.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 104,
+        "comments": 37,
+        "blanks": 0,
+        "total": 141
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/utils/urlBuilders/index.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 103,
+        "comments": 0,
+        "blanks": 0,
+        "total": 103
+      }
+    },
+    {
+      "path": "apps/plugin/project.json",
+      "language": "JSON",
+      "metrics": {
+        "loc": 102,
+        "comments": 0,
+        "blanks": 0,
+        "total": 102
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/dom/proxyInteractionService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 101,
+        "comments": 0,
+        "blanks": 0,
+        "total": 101
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-types/src/chart/navigatorOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 100,
+        "comments": 45,
+        "blanks": 0,
+        "total": 145
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/series/cartesian/lineUtil.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 100,
+        "comments": 0,
+        "blanks": 0,
+        "total": 100
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/chartAxis.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 99,
+        "comments": 0,
+        "blanks": 0,
+        "total": 99
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/scene/node.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 99,
+        "comments": 41,
+        "blanks": 0,
+        "total": 140
+      }
+    },
+    {
+      "path": ".eslintrc.cjs",
+      "language": "Other",
+      "metrics": {
+        "loc": 98,
+        "comments": 0,
+        "blanks": 1,
+        "total": 99
+      }
+    },
+    {
+      "path": ".github/workflows/node-version-check.yml",
+      "language": "Other",
+      "metrics": {
+        "loc": 98,
+        "comments": 0,
+        "blanks": 9,
+        "total": 107
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 97,
+        "comments": 0,
+        "blanks": 10,
+        "total": 107
+      }
+    },
+    {
+      "path": "apps/plugin/manifest.xml",
+      "language": "Other",
+      "metrics": {
+        "loc": 96,
+        "comments": 0,
+        "blanks": 0,
+        "total": 96
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/chart/pagination/pagination.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 96,
+        "comments": 3,
+        "blanks": 0,
+        "total": 99
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/server-side-row-model/serverSideRowModel/stores/fullStore.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 94,
+        "comments": 0,
+        "blanks": 0,
+        "total": 94
+      }
+    },
+    {
+      "path": "libs/shared/src/types/dataPoints.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 93,
+        "comments": 0,
+        "blanks": 10,
+        "total": 103
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-enterprise/charts/charts/chartComp/chartController.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 93,
+        "comments": 0,
+        "blanks": 0,
+        "total": 93
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-types/src/chart/legendOptions.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 93,
+        "comments": 56,
+        "blanks": 0,
+        "total": 149
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/misc/menuService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 92,
+        "comments": 5,
+        "blanks": 0,
+        "total": 97
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/filter/columnFilterService.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 91,
+        "comments": 0,
+        "blanks": 0,
+        "total": 91
+      }
+    },
+    {
+      "path": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/module/optionsModule.d.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 91,
+        "comments": 0,
+        "blanks": 0,
+        "total": 91
+      }
+    },
+    {
+      "path": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+      "language": "TypeScript",
+      "metrics": {
+        "loc": 91,
+        "comments": 0,
+        "blanks": 2,
+        "total": 93
+      }
+    }
+  ],
+  "analysis": {
+    "complexity": {
+      "totalFunctions": 123,
+      "flaggedFunctions": 0,
+      "functions": []
+    },
+    "security": {
+      "issues": [
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts",
+          "line": 436,
+          "severity": "medium",
+          "category": "dangerous_function",
+          "description": "Use of Function constructor"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/util/dom.d.ts",
+          "line": 9,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts",
+          "line": 1557,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+          "line": 204,
+          "severity": "low",
+          "category": "non_https",
+          "description": "Non-HTTPS URL (excluding localhost)"
+        }
+      ],
+      "counts": {
+        "high": 0,
+        "medium": 1,
+        "low": 3
+      }
+    },
+    "smells": {
+      "issues": [
+        {
+          "file": "libs/backend-utils/src/config/fetchConfig.schema.ts",
+          "line": 65,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.test.ts",
+          "line": 56,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.ts",
+          "line": 24,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts",
+          "line": 51,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.ts",
+          "line": 38,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 6 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/middleware/requestValidation.middleware.test.ts",
+          "line": 24,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+          "line": 60,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+          "line": 39,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/plugin/webpack.config.ts",
+          "line": 148,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 7 levels"
+        },
+        {
+          "file": "apps/api-core/src/config/loggerOptions.test.ts",
+          "line": 11,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 5 levels"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+          "line": 56,
+          "type": "deep_nesting",
+          "severity": "high",
+          "details": "Nesting depth reaches 9 levels"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+          "line": 441,
+          "type": "long_function",
+          "severity": "medium",
+          "details": "Function 'getDataPointsBySource' is 68 lines"
+        },
+        {
+          "file": "plopfile.js",
+          "line": 1,
+          "type": "large_file",
+          "severity": "low",
+          "details": "File has 347 lines of code"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+          "line": 1,
+          "type": "large_file",
+          "severity": "low",
+          "details": "File has 1285 lines of code"
+        },
+        {
+          "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+          "line": 1,
+          "type": "large_file",
+          "severity": "low",
+          "details": "File has 456 lines of code"
+        }
+      ],
+      "summary": {
+        "long_functions": 1,
+        "deep_nesting": 11,
+        "long_params": 0,
+        "large_files": 3
+      }
+    },
+    "duplicates": {
+      "totalGroups": 50,
+      "totalDuplicateLines": 640,
+      "groups": [
+        {
+          "hash": "844d697a1b9dae8f143f746b7bfa5efd",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 29,
+              "endLine": 33
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 62,
+              "endLine": 66
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 103,
+              "endLine": 107
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 129,
+              "endLine": 133
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 242,
+              "endLine": 246
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 320,
+              "endLine": 324
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 346,
+              "endLine": 350
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 372,
+              "endLine": 376
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 398,
+              "endLine": 402
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 720,
+              "endLine": 724
+            }
+          ]
+        },
+        {
+          "hash": "09da348a2c96fbf8316aeb51aa363468",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataset.fixtures.ts",
+              "startLine": 8,
+              "endLine": 12
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 423,
+              "endLine": 427
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 661,
+              "endLine": 665
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 870,
+              "endLine": 874
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 882,
+              "endLine": 886
+            }
+          ]
+        },
+        {
+          "hash": "cec35bbb50836fa4728339a590dae9d7",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 28,
+              "endLine": 32
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 61,
+              "endLine": 65
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 815,
+              "endLine": 819
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 841,
+              "endLine": 845
+            }
+          ]
+        },
+        {
+          "hash": "c43fa613222e299075c94237fa89e815",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 31,
+              "endLine": 35
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 64,
+              "endLine": 68
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 348,
+              "endLine": 352
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 1071,
+              "endLine": 1075
+            }
+          ]
+        },
+        {
+          "hash": "87a3dcf24ce71aa530e2dacf5c3a5842",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 32,
+              "endLine": 36
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 65,
+              "endLine": 69
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 349,
+              "endLine": 353
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 1072,
+              "endLine": 1076
+            }
+          ]
+        },
+        {
+          "hash": "cc744c395d7dd003a3648069a8c11ad1",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 33,
+              "endLine": 37
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 66,
+              "endLine": 70
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 350,
+              "endLine": 354
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 1073,
+              "endLine": 1077
+            }
+          ]
+        },
+        {
+          "hash": "bea18ba410cf23f2d44a3df642388ccd",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 30,
+              "endLine": 34
+            },
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts",
+              "startLine": 63,
+              "endLine": 67
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 347,
+              "endLine": 351
+            }
+          ]
+        },
+        {
+          "hash": "0cfae229169c6a1ae1ec86b8bd139c97",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/testing-utils/dataset.fixtures.ts",
+              "startLine": 7,
+              "endLine": 11
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 422,
+              "endLine": 426
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+              "startLine": 660,
+              "endLine": 664
+            }
+          ]
+        },
+        {
+          "hash": "e1702529a5170307818b4f7b58ea0f03",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 5,
+              "endLine": 9
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 3,
+              "endLine": 7
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 11,
+              "endLine": 15
+            }
+          ]
+        },
+        {
+          "hash": "7e5c25c46f4d193353feda17346f2d0e",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 6,
+              "endLine": 11
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 4,
+              "endLine": 9
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 12,
+              "endLine": 17
+            }
+          ]
+        },
+        {
+          "hash": "568cf8973d62250a6b36f70ca4cd1810",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 7,
+              "endLine": 12
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 5,
+              "endLine": 10
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 13,
+              "endLine": 18
+            }
+          ]
+        },
+        {
+          "hash": "b5562355103aea8376847968c8c6699f",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 8,
+              "endLine": 13
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 6,
+              "endLine": 11
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 14,
+              "endLine": 19
+            }
+          ]
+        },
+        {
+          "hash": "728db83fb351970eaad3e59fd325688e",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 18,
+              "endLine": 22
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 16,
+              "endLine": 20
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 22,
+              "endLine": 26
+            }
+          ]
+        },
+        {
+          "hash": "9ecb4c1f32eb700cb249608e444aabab",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 19,
+              "endLine": 23
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 17,
+              "endLine": 21
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 23,
+              "endLine": 27
+            }
+          ]
+        },
+        {
+          "hash": "da3693b12d2aa4a381b33c7bad32c436",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts",
+              "startLine": 20,
+              "endLine": 24
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 18,
+              "endLine": 22
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 24,
+              "endLine": 28
+            }
+          ]
+        },
+        {
+          "hash": "fadb318fc6f1717c1260386f1f80a772",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/setupUnitTests.ts",
+              "startLine": 5,
+              "endLine": 9
+            },
+            {
+              "file": "apps/api-core/setupUnitTests.ts",
+              "startLine": 34,
+              "endLine": 38
+            }
+          ]
+        },
+        {
+          "hash": "671c93029bbce0fda709bdd84ef0b388",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 59,
+              "endLine": 63
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 21,
+              "endLine": 25
+            }
+          ]
+        },
+        {
+          "hash": "0ebec6a1bfc589d8d97b9f2cc21f60d5",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 60,
+              "endLine": 64
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 22,
+              "endLine": 26
+            }
+          ]
+        },
+        {
+          "hash": "13c3f3a5842116bb69290be50973992b",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 61,
+              "endLine": 65
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 23,
+              "endLine": 27
+            }
+          ]
+        },
+        {
+          "hash": "f851841f491087cd71668fe78afcdc59",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 62,
+              "endLine": 66
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 24,
+              "endLine": 28
+            }
+          ]
+        },
+        {
+          "hash": "1b1a2355c638a6383f12d24304501d2d",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 63,
+              "endLine": 67
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 25,
+              "endLine": 29
+            }
+          ]
+        },
+        {
+          "hash": "0ee25dd602f8db1a2af61c88e18e0fbf",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 64,
+              "endLine": 68
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 26,
+              "endLine": 30
+            }
+          ]
+        },
+        {
+          "hash": "3b802409484d990b8118d258b2d45e4f",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/shared/src/types/dataPoints.ts",
+              "startLine": 65,
+              "endLine": 69
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.constants.ts",
+              "startLine": 27,
+              "endLine": 31
+            }
+          ]
+        },
+        {
+          "hash": "00dc55f39dddda45e37e3edf95e47e82",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.accessors.test.ts",
+              "startLine": 17,
+              "endLine": 22
+            },
+            {
+              "file": "libs/backend-utils/src/database/docdb/docdb.session.test.ts",
+              "startLine": 43,
+              "endLine": 48
+            }
+          ]
+        },
+        {
+          "hash": "c2cb5544f7a9e7c499a76a018069306c",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 11,
+              "endLine": 16
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 8,
+              "endLine": 13
+            }
+          ]
+        },
+        {
+          "hash": "0f56cfa1cb1bb433137e9a70639f0cdd",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 12,
+              "endLine": 17
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 9,
+              "endLine": 14
+            }
+          ]
+        },
+        {
+          "hash": "71c43df8d0573311a1554f949bdf58f8",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 13,
+              "endLine": 18
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 10,
+              "endLine": 15
+            }
+          ]
+        },
+        {
+          "hash": "3e97d91080aeb71a423ab0574d1ce1f6",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 15,
+              "endLine": 19
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 12,
+              "endLine": 16
+            }
+          ]
+        },
+        {
+          "hash": "afd85c2f540e69d12dc325201c30a2c4",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 16,
+              "endLine": 21
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 13,
+              "endLine": 18
+            }
+          ]
+        },
+        {
+          "hash": "46c4d1bb6e9e4927f1f6944d9697a84e",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 17,
+              "endLine": 23
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 14,
+              "endLine": 20
+            }
+          ]
+        },
+        {
+          "hash": "75b216efe82b5b827c2f0bd23c11220c",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/config/config.constants.ts",
+              "startLine": 18,
+              "endLine": 24
+            },
+            {
+              "file": "apps/api-core/src/config/config.types.ts",
+              "startLine": 15,
+              "endLine": 21
+            }
+          ]
+        },
+        {
+          "hash": "46bc1e8741b65dbab65a696d3b2ca3c5",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts",
+              "startLine": 115,
+              "endLine": 119
+            },
+            {
+              "file": "apps/api-core/src/config/loggerOptions.test.ts",
+              "startLine": 13,
+              "endLine": 17
+            }
+          ]
+        },
+        {
+          "hash": "e1a611f6c4ea9e5a881e02bd239b94fd",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.schema.ts",
+              "startLine": 24,
+              "endLine": 28
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 33,
+              "endLine": 37
+            }
+          ]
+        },
+        {
+          "hash": "3e5c1ef732fb864ea9b2019ceb5b74db",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 5,
+              "endLine": 9
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 78,
+              "endLine": 82
+            }
+          ]
+        },
+        {
+          "hash": "a1edc44605eed6888277f9c66fd7ac86",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 6,
+              "endLine": 10
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 79,
+              "endLine": 83
+            }
+          ]
+        },
+        {
+          "hash": "62b0b157307cdc5a008ed0192eb300e1",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 7,
+              "endLine": 12
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 80,
+              "endLine": 85
+            }
+          ]
+        },
+        {
+          "hash": "69e6b386ce3c2b14072fc74a149012bb",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 8,
+              "endLine": 13
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 81,
+              "endLine": 86
+            }
+          ]
+        },
+        {
+          "hash": "ba9ab8d69cf11358606d8b96255ea6bf",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 9,
+              "endLine": 14
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 82,
+              "endLine": 87
+            }
+          ]
+        },
+        {
+          "hash": "3667bf5b3e39034bf1507bb172a05431",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 10,
+              "endLine": 15
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 83,
+              "endLine": 88
+            }
+          ]
+        },
+        {
+          "hash": "a9df80adee47029b05b7548d6d0b39c0",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 12,
+              "endLine": 16
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 85,
+              "endLine": 89
+            }
+          ]
+        },
+        {
+          "hash": "4b8d1a051c25df63bbdfe97c7e8fd8a5",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 13,
+              "endLine": 17
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 86,
+              "endLine": 90
+            }
+          ]
+        },
+        {
+          "hash": "2d5eff2cf48d8fc7270ba68e959e26b3",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 14,
+              "endLine": 19
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 87,
+              "endLine": 92
+            }
+          ]
+        },
+        {
+          "hash": "e8527a49858228a571796c86483d7bef",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 15,
+              "endLine": 20
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 88,
+              "endLine": 93
+            }
+          ]
+        },
+        {
+          "hash": "eb86b7679ecebb1db17d0e676e67ba38",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 16,
+              "endLine": 21
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 89,
+              "endLine": 94
+            }
+          ]
+        },
+        {
+          "hash": "88a87ce0ab452f3683538913f0e96d6d",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 17,
+              "endLine": 22
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 90,
+              "endLine": 95
+            }
+          ]
+        },
+        {
+          "hash": "0bc9d4fb271e9b85e2171dd7e266e9ff",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 19,
+              "endLine": 23
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 92,
+              "endLine": 96
+            }
+          ]
+        },
+        {
+          "hash": "962d0f5f5dc05ef56e92d48820cf784b",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataPoint/dataPoint.types.ts",
+              "startLine": 20,
+              "endLine": 25
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 93,
+              "endLine": 98
+            }
+          ]
+        },
+        {
+          "hash": "d8f540e65cb60b598f5023a600ef526c",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts",
+              "startLine": 51,
+              "endLine": 55
+            },
+            {
+              "file": "libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts",
+              "startLine": 73,
+              "endLine": 77
+            }
+          ]
+        },
+        {
+          "hash": "ff5e1a9195ba74f7c1227a28cd703a01",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/formulaSummaries/formulaSummaries.schema.ts",
+              "startLine": 2,
+              "endLine": 6
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 53,
+              "endLine": 57
+            }
+          ]
+        },
+        {
+          "hash": "7e731f44de8368a3c51daa9500614038",
+          "lineCount": 5,
+          "locations": [
+            {
+              "file": "libs/backend-utils/src/database/utils/formulaSummaries/formulaSummaries.schema.ts",
+              "startLine": 3,
+              "endLine": 7
+            },
+            {
+              "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.types.ts",
+              "startLine": 54,
+              "endLine": 58
+            }
+          ]
+        }
+      ]
+    },
+    "unusedImports": {
+      "totalFiles": 0,
+      "totalUnused": 0,
+      "files": []
+    },
+    "problemFiles": [
+      {
+        "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts",
+        "totalIssues": 3,
+        "breakdown": {
+          "complexity": 0,
+          "security": 1,
+          "smells": 2
+        }
+      },
+      {
+        "file": "apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts",
+        "totalIssues": 2,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 2
+        }
+      },
+      {
+        "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 1,
+          "smells": 0
+        }
+      },
+      {
+        "file": "apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/util/dom.d.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 1,
+          "smells": 0
+        }
+      },
+      {
+        "file": "apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 1,
+          "smells": 0
+        }
+      },
+      {
+        "file": "libs/backend-utils/src/config/fetchConfig.schema.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 1
+        }
+      },
+      {
+        "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.test.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 1
+        }
+      },
+      {
+        "file": "libs/backend-utils/src/middleware/gzipCompression.middleware.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 1
+        }
+      },
+      {
+        "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 1
+        }
+      },
+      {
+        "file": "libs/backend-utils/src/middleware/loggerProfile.middleware.ts",
+        "totalIssues": 1,
+        "breakdown": {
+          "complexity": 0,
+          "security": 0,
+          "smells": 1
+        }
+      }
+    ]
+  },
+  "qualityScore": 96,
+  "grade": "A",
+  "qualityContext": {
+    "flaggedRatio": 0.0,
+    "industryBenchmark": "Typical well-maintained codebases have 3-8% of functions exceeding complexity threshold of 10",
+    "assessment": "excellent"
+  },
+  "trend": null,
+  "roadmap": [
+    {
+      "priority": 1,
+      "action": "Consolidate 50 duplicate code blocks (640 lines)",
+      "category": "duplicates",
+      "currentValue": 50,
+      "estimatedScoreGain": 2,
+      "effort": "medium",
+      "rationale": "Reducing duplication simplifies maintenance and reduces bug surface area"
+    }
+  ]
+}

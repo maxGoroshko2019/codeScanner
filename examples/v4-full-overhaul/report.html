@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Scan Report</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f7; color: #333; padding: 24px; }
+        .header { text-align: center; margin-bottom: 32px; }
+        .header h1 { color: #1a1a2e; margin-bottom: 8px; }
+        .score { font-size: 72px; font-weight: 700; color: #2d7a3a; }
+        .grade { font-size: 36px; font-weight: 600; color: #2d7a3a; margin-left: 12px; }
+        .subtitle { color: #666; margin-top: 8px; }
+        .dashboard { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 32px; }
+        .stat-card { background: #fff; border-radius: 8px; padding: 20px; text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .stat-card .value { font-size: 28px; font-weight: 700; color: #1a1a2e; }
+        .stat-card .label { font-size: 13px; color: #666; margin-top: 4px; }
+        .section { background: #fff; border-radius: 8px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .section h2 { color: #1a1a2e; margin-bottom: 16px; font-size: 18px; }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { background: #1a1a2e; color: #fff; padding: 10px 8px; text-align: left; }
+        td { padding: 8px; border-bottom: 1px solid #eee; }
+        tr:hover { background: #f8f8fa; }
+        .high { color: #9a3a2d; font-weight: 600; }
+        .medium { color: #7a6b2d; font-weight: 600; }
+        .low { color: #4a7a2d; font-weight: 600; }
+        .mid { color: #7a6b2d; font-weight: 600; }
+        .bar-chart { margin-top: 12px; }
+        .bar-row { display: flex; align-items: center; margin-bottom: 8px; }
+        .bar-label { width: 100px; font-size: 13px; color: #555; flex-shrink: 0; }
+        .bar-track { flex: 1; background: #eee; border-radius: 4px; height: 24px; position: relative; }
+        .bar-fill { height: 100%; border-radius: 4px; background: #1a1a2e; display: flex; align-items: center; padding-left: 8px; font-size: 11px; color: #fff; font-weight: 600; min-width: 24px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Code Scan Report</h1>
+        <div><span class="score">96</span><span class="grade">A</span></div>
+        <p class="subtitle">C:\Projects\mdc-excel-addin</p>
+    </div>
+
+    <div class="dashboard">
+        <div class="stat-card"><div class="value">2,043</div><div class="label">Files</div></div>
+        <div class="stat-card"><div class="value">101,428</div><div class="label">Lines of Code</div></div>
+        <div class="stat-card"><div class="value">123</div><div class="label">Functions</div></div>
+        <div class="stat-card"><div class="value">0</div><div class="label">Complex (>10)</div></div>
+        <div class="stat-card"><div class="value">4</div><div class="label">Security Issues</div></div>
+        <div class="stat-card"><div class="value">15</div><div class="label">Code Smells</div></div>
+    </div>
+
+    
+
+    
+    <div class="section">
+        <h2>Remediation Roadmap</h2>
+        <div style="display:grid;gap:12px;"><div style="display:flex;align-items:center;gap:12px;padding:12px;background:#f8f8fa;border-radius:6px;">
+                <span style="font-size:20px;font-weight:700;color:#1a1a2e;width:28px;">1</span>
+                <div style="flex:1;"><div style="font-size:14px;font-weight:500;">Consolidate 50 duplicate code blocks (640 lines)</div><div style="font-size:12px;color:#666;margin-top:4px;">Reducing duplication simplifies maintenance and reduces bug surface area</div></div>
+                <span style="background:#7a6b2d;color:#fff;padding:3px 8px;border-radius:4px;font-size:11px;font-weight:600;">medium</span>
+                <span style="font-size:13px;font-weight:600;color:#1a1a2e;">+2 pts</span>
+            </div></div></div>
+
+    <div class="section">
+        <h2>Language Distribution</h2>
+        <div class="bar-chart" id="lang-chart"></div>
+    </div>
+
+    <div class="section">
+        <h2>Complexity Distribution</h2>
+        <div class="bar-chart" id="complexity-chart"></div>
+    </div>
+
+    <div class="section">
+        <h2>Quality Breakdown</h2>
+        <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+            <svg id="donut" width="200" height="200" viewBox="0 0 200 200"></svg>
+            <div id="donut-legend"></div>
+        </div>
+        <p style="font-size:12px;color:#666;margin-top:12px;font-style:italic;">Typical well-maintained codebases have 3-8% of functions exceeding complexity threshold of 10. Your ratio: 0.0%.</p>
+    </div>
+
+    <div class="section">
+        <h2>Top Problem Files</h2>
+        <table>
+            <thead><tr><th>File</th><th>Total</th><th>Complexity</th><th>Security</th><th>Smells</th></tr></thead>
+            <tbody><tr><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts</code></td><td>3</td><td>0</td><td>1</td><td>2</td></tr>
+<tr><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts</code></td><td>2</td><td>0</td><td>0</td><td>2</td></tr>
+<tr><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts</code></td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/util/dom.d.ts</code></td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts</code></td><td>1</td><td>0</td><td>1</td><td>0</td></tr>
+<tr><td><code>libs/backend-utils/src/config/fetchConfig.schema.ts</code></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><code>libs/backend-utils/src/middleware/gzipCompression.middleware.test.ts</code></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><code>libs/backend-utils/src/middleware/gzipCompression.middleware.ts</code></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><code>libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts</code></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+<tr><td><code>libs/backend-utils/src/middleware/loggerProfile.middleware.ts</code></td><td>1</td><td>0</td><td>0</td><td>1</td></tr>
+</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Top Complex Functions</h2>
+        <table>
+            <thead><tr><th>Function</th><th>File</th><th>Line</th><th>Complexity</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Security Issues</h2>
+        <p style="margin-bottom:12px;color:#666;">High: 0 | Medium: 1 | Low: 3</p>
+        <table>
+            <thead><tr><th>Severity</th><th>File</th><th>Line</th><th>Description</th></tr></thead>
+            <tbody><tr><td class="medium">MEDIUM</td><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-grid-community/core/entities/gridOptions.d.ts</code></td><td>436</td><td>Use of Function constructor</td></tr>
+<tr><td class="low">LOW</td><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/ag-grid/ag-charts-community/src/util/dom.d.ts</code></td><td>9</td><td>Non-HTTPS URL (excluding localhost)</td></tr>
+<tr><td class="low">LOW</td><td><code>apps/plugin/src/federated/nanofrontendTypes/libs/@splitsoftware/splitio-commons/splitio.d.ts</code></td><td>1557</td><td>Non-HTTPS URL (excluding localhost)</td></tr>
+<tr><td class="low">LOW</td><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts</code></td><td>204</td><td>Non-HTTPS URL (excluding localhost)</td></tr>
+</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Code Smells</h2>
+        <div class="dashboard" style="margin-bottom:16px;">
+            <div class="stat-card"><div class="value">1</div><div class="label">Long Functions</div></div>
+            <div class="stat-card"><div class="value">11</div><div class="label">Deep Nesting</div></div>
+            <div class="stat-card"><div class="value">0</div><div class="label">Long Params</div></div>
+            <div class="stat-card"><div class="value">3</div><div class="label">Large Files</div></div>
+        </div>
+        <table>
+            <thead><tr><th>Type</th><th>File</th><th>Line</th><th>Details</th></tr></thead>
+            <tbody><tr><td>deep_nesting</td><td><code>libs/backend-utils/src/config/fetchConfig.schema.ts</code></td><td>65</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/middleware/gzipCompression.middleware.test.ts</code></td><td>56</td><td>Nesting depth reaches 6 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/middleware/gzipCompression.middleware.ts</code></td><td>24</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/middleware/loggerProfile.middleware.test.ts</code></td><td>51</td><td>Nesting depth reaches 6 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/middleware/loggerProfile.middleware.ts</code></td><td>38</td><td>Nesting depth reaches 6 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/middleware/requestValidation.middleware.test.ts</code></td><td>24</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/database/docdb/docdb.session.test.ts</code></td><td>60</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts</code></td><td>39</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>apps/plugin/webpack.config.ts</code></td><td>148</td><td>Nesting depth reaches 7 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>apps/api-core/src/config/loggerOptions.test.ts</code></td><td>11</td><td>Nesting depth reaches 5 levels</td></tr>
+<tr><td>deep_nesting</td><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts</code></td><td>56</td><td>Nesting depth reaches 9 levels</td></tr>
+<tr><td>long_function</td><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts</code></td><td>441</td><td>Function 'getDataPointsBySource' is 68 lines</td></tr>
+<tr><td>large_file</td><td><code>plopfile.js</code></td><td>1</td><td>File has 347 lines of code</td></tr>
+<tr><td>large_file</td><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts</code></td><td>1</td><td>File has 1285 lines of code</td></tr>
+<tr><td>large_file</td><td><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.ts</code></td><td>1</td><td>File has 456 lines of code</td></tr>
+</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Duplicate Code</h2>
+        <p style="margin-bottom:12px;color:#666;"><strong>50</strong> duplicate groups totaling <strong>640</strong> lines</p>
+        <table>
+            <thead><tr><th>#</th><th>Lines</th><th>Locations</th></tr></thead>
+            <tbody><tr><td>1</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:29-33</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:62-66</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:103-107</code></td></tr>
+<tr><td>2</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataset.fixtures.ts:8-12</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:423-427</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:661-665</code></td></tr>
+<tr><td>3</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:28-32</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:61-65</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:815-819</code></td></tr>
+<tr><td>4</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:31-35</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:64-68</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:348-352</code></td></tr>
+<tr><td>5</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:32-36</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:65-69</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:349-353</code></td></tr>
+<tr><td>6</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:33-37</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:66-70</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:350-354</code></td></tr>
+<tr><td>7</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:30-34</code><br><code>libs/backend-utils/src/testing-utils/dataPoint.fixtures.ts:63-67</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:347-351</code></td></tr>
+<tr><td>8</td><td>5</td><td><code>libs/backend-utils/src/testing-utils/dataset.fixtures.ts:7-11</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:422-426</code><br><code>apps/api-core/src/handlers/getDataPoints/getDataPoints.helper.test.ts:660-664</code></td></tr>
+<tr><td>9</td><td>5</td><td><code>libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts:5-9</code><br><code>libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts:3-7</code><br><code>libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts:11-15</code></td></tr>
+<tr><td>10</td><td>5</td><td><code>libs/backend-utils/src/database/utils/dataPoint/dataPoint.repository.test.ts:6-11</code><br><code>libs/backend-utils/src/database/utils/dataset/dataset.repository.test.ts:4-9</code><br><code>libs/backend-utils/src/database/utils/marketSegmentTabs/marketSegmentTabs.repository.test.ts:12-17</code></td></tr>
+</tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Unused Imports</h2>
+        <p style="margin-bottom:12px;color:#666;"><strong>0</strong> unused across <strong>0</strong> files</p>
+        <table>
+            <thead><tr><th>File</th><th>Unused Symbols</th></tr></thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+    const langLabels = ["TypeScript", "Other", "JSON", "Markdown", "JavaScript", "HTML"];
+    const langFiles = [1930, 61, 26, 21, 3, 2];
+    const langLines = [50677, 4492, 43954, 1927, 353, 25];
+    const maxFiles = Math.max(...langFiles);
+
+    const chartEl = document.getElementById('lang-chart');
+    chartEl.innerHTML = langLabels.map((label, i) => {
+        const pct = (langFiles[i] / maxFiles) * 100;
+        return `<div class="bar-row">
+            <span class="bar-label">${label}</span>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:${pct}%">${langFiles[i].toLocaleString()} files</div>
+            </div>
+        </div>`;
+    }).join('');
+
+    // Complexity distribution histogram
+    const complexityBuckets = [82, 41, 0, 0, 0];
+    const complexityLabels = ['1-5', '6-10', '11-15', '16-20', '20+'];
+    const maxBucket = Math.max(...complexityBuckets);
+    const complexityChartEl = document.getElementById('complexity-chart');
+    const bucketColors = ['#2d7a3a', '#4a7a2d', '#7a6b2d', '#7a4a2d', '#9a3a2d'];
+    complexityChartEl.innerHTML = complexityLabels.map((label, i) => {
+        const pct = maxBucket > 0 ? (complexityBuckets[i] / maxBucket) * 100 : 0;
+        return `<div class="bar-row">
+            <span class="bar-label">${label}</span>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:${pct}%;background:${bucketColors[i]}">${complexityBuckets[i].toLocaleString()}</div>
+            </div>
+        </div>`;
+    }).join('');
+
+    // Quality breakdown donut chart
+    const subScores = [100, 89, 99];
+    const subLabels = ['Complexity (40%)', 'Security (30%)', 'Smells (30%)'];
+    const subColors = [
+        subScores[0] >= 70 ? '#2d7a3a' : subScores[0] >= 40 ? '#7a6b2d' : '#9a3a2d',
+        subScores[1] >= 70 ? '#2d7a3a' : subScores[1] >= 40 ? '#7a6b2d' : '#9a3a2d',
+        subScores[2] >= 70 ? '#2d7a3a' : subScores[2] >= 40 ? '#7a6b2d' : '#9a3a2d',
+    ];
+    const weights = [0.4, 0.3, 0.3];
+    const total = weights.reduce((a, b) => a + b, 0);
+    let cumulative = 0;
+    const svgEl = document.getElementById('donut');
+
+    function polarToCartesian(cx, cy, r, angle) {
+        const rad = (angle - 90) * Math.PI / 180;
+        return { x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) };
+    }
+
+    const paths = weights.map((w, i) => {
+        const startAngle = cumulative * 360;
+        cumulative += w / total;
+        const endAngle = cumulative * 360;
+        const start = polarToCartesian(100, 100, 80, startAngle);
+        const end = polarToCartesian(100, 100, 80, endAngle);
+        const largeArc = (endAngle - startAngle) > 180 ? 1 : 0;
+        return `<path d="M 100 100 L ${start.x} ${start.y} A 80 80 0 ${largeArc} 1 ${end.x} ${end.y} Z" fill="${subColors[i]}" opacity="0.85"/>`;
+    });
+    svgEl.innerHTML = paths.join('') + '<circle cx="100" cy="100" r="45" fill="#f5f5f7"/><text x="100" y="108" text-anchor="middle" font-size="24" font-weight="700" fill="#333">96</text>';
+
+    const legendEl = document.getElementById('donut-legend');
+    legendEl.innerHTML = subLabels.map((label, i) => `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><div style="width:16px;height:16px;border-radius:3px;background:${subColors[i]}"></div><span style="font-size:14px;">${label}: ${subScores[i]}/100</span></div>`).join('');
+    </script>
+</body>
+</html>
