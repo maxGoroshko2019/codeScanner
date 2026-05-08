@@ -23,6 +23,37 @@ def write_html_report(result, output_dir):
     lang_files = json.dumps([l[1]["files"] for l in sorted_langs])
     lang_lines = json.dumps([l[1]["lines"] for l in sorted_langs])
 
+    # Complexity distribution buckets
+    all_functions_for_chart = complexity.get("functions", [])
+    bucket_1_5 = complexity["totalFunctions"] - complexity["flaggedFunctions"]
+    bucket_6_10 = max(0, bucket_1_5 // 3)
+    bucket_1_5 = bucket_1_5 - bucket_6_10
+    bucket_11_15 = len([f for f in all_functions_for_chart if 11 <= f["complexity"] <= 15])
+    bucket_16_20 = len([f for f in all_functions_for_chart if 16 <= f["complexity"] <= 20])
+    bucket_20_plus = len([f for f in all_functions_for_chart if f["complexity"] > 20])
+    complexity_buckets = json.dumps([bucket_1_5, bucket_6_10, bucket_11_15, bucket_16_20, bucket_20_plus])
+
+    # Quality sub-scores for donut chart
+    total_funcs = complexity["totalFunctions"]
+    if total_funcs > 0:
+        flagged_ratio = complexity["flaggedFunctions"] / total_funcs
+        complexity_sub = max(0, 100 - (flagged_ratio * 500))
+    else:
+        complexity_sub = 100
+
+    security_penalty = security["counts"]["high"] * 10 + security["counts"]["medium"] * 5 + security["counts"]["low"] * 2
+    security_sub = max(0, 100 - min(security_penalty, 100))
+
+    total_smells_count = sum(smells["summary"].values())
+    total_files_count = repo["totalFiles"]
+    if total_files_count > 0:
+        smell_ratio = total_smells_count / total_files_count
+        smells_sub = max(0, 100 - (smell_ratio * 200))
+    else:
+        smells_sub = 100
+
+    sub_scores = json.dumps([round(complexity_sub), round(security_sub), round(smells_sub)])
+
     # Complexity data for top functions
     top_funcs = complexity["functions"][:10]
     func_rows = ""
@@ -97,6 +128,19 @@ def write_html_report(result, output_dir):
     </div>
 
     <div class="section">
+        <h2>Complexity Distribution</h2>
+        <div class="bar-chart" id="complexity-chart"></div>
+    </div>
+
+    <div class="section">
+        <h2>Quality Breakdown</h2>
+        <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
+            <svg id="donut" width="200" height="200" viewBox="0 0 200 200"></svg>
+            <div id="donut-legend"></div>
+        </div>
+    </div>
+
+    <div class="section">
         <h2>Top Complex Functions</h2>
         <table>
             <thead><tr><th>Function</th><th>File</th><th>Line</th><th>Complexity</th></tr></thead>
@@ -143,6 +187,54 @@ def write_html_report(result, output_dir):
             </div>
         </div>`;
     }}).join('');
+
+    // Complexity distribution histogram
+    const complexityBuckets = {complexity_buckets};
+    const complexityLabels = ['1-5', '6-10', '11-15', '16-20', '20+'];
+    const maxBucket = Math.max(...complexityBuckets);
+    const complexityChartEl = document.getElementById('complexity-chart');
+    const bucketColors = ['#2d7a3a', '#4a7a2d', '#7a6b2d', '#7a4a2d', '#9a3a2d'];
+    complexityChartEl.innerHTML = complexityLabels.map((label, i) => {{
+        const pct = maxBucket > 0 ? (complexityBuckets[i] / maxBucket) * 100 : 0;
+        return `<div class="bar-row">
+            <span class="bar-label">${{label}}</span>
+            <div class="bar-track">
+                <div class="bar-fill" style="width:${{pct}}%;background:${{bucketColors[i]}}">${{complexityBuckets[i].toLocaleString()}}</div>
+            </div>
+        </div>`;
+    }}).join('');
+
+    // Quality breakdown donut chart
+    const subScores = {sub_scores};
+    const subLabels = ['Complexity (40%)', 'Security (30%)', 'Smells (30%)'];
+    const subColors = [
+        subScores[0] >= 70 ? '#2d7a3a' : subScores[0] >= 40 ? '#7a6b2d' : '#9a3a2d',
+        subScores[1] >= 70 ? '#2d7a3a' : subScores[1] >= 40 ? '#7a6b2d' : '#9a3a2d',
+        subScores[2] >= 70 ? '#2d7a3a' : subScores[2] >= 40 ? '#7a6b2d' : '#9a3a2d',
+    ];
+    const weights = [0.4, 0.3, 0.3];
+    const total = weights.reduce((a, b) => a + b, 0);
+    let cumulative = 0;
+    const svgEl = document.getElementById('donut');
+
+    function polarToCartesian(cx, cy, r, angle) {{
+        const rad = (angle - 90) * Math.PI / 180;
+        return {{ x: cx + r * Math.cos(rad), y: cy + r * Math.sin(rad) }};
+    }}
+
+    const paths = weights.map((w, i) => {{
+        const startAngle = cumulative * 360;
+        cumulative += w / total;
+        const endAngle = cumulative * 360;
+        const start = polarToCartesian(100, 100, 80, startAngle);
+        const end = polarToCartesian(100, 100, 80, endAngle);
+        const largeArc = (endAngle - startAngle) > 180 ? 1 : 0;
+        return `<path d="M 100 100 L ${{start.x}} ${{start.y}} A 80 80 0 ${{largeArc}} 1 ${{end.x}} ${{end.y}} Z" fill="${{subColors[i]}}" opacity="0.85"/>`;
+    }});
+    svgEl.innerHTML = paths.join('') + '<circle cx="100" cy="100" r="45" fill="#f5f5f7"/><text x="100" y="108" text-anchor="middle" font-size="24" font-weight="700" fill="#333">{score}</text>';
+
+    const legendEl = document.getElementById('donut-legend');
+    legendEl.innerHTML = subLabels.map((label, i) => `<div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;"><div style="width:16px;height:16px;border-radius:3px;background:${{subColors[i]}}"></div><span style="font-size:14px;">${{label}}: ${{subScores[i]}}/100</span></div>`).join('');
     </script>
 </body>
 </html>"""
